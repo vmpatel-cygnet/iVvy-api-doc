@@ -4,7 +4,6 @@
 * [Getting Started](getting-started/README.md)
   * [Introduction](getting-started/introduction.md)
   * [Obtaining Keys](getting-started/obtaining-keys.md)
-* [Events](events/README.md)
-  * [addOrUpdateEvent](events/addorupdateevent.md)
+* [Events](addorupdateevent.md)
 * [Untitled](untitled.md)
 

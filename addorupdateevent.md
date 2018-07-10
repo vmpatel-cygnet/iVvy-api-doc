@@ -1,10 +1,13 @@
-# Customers
+# Events
 
-## Get all customers
+## AddOrUpdateEvent
 
-Returns all customers from the specified interval according to the time filter \(e.g. customers created in that interval\).
+Updates information of a event.
 
-### Request
+| Property | Type | Description |
+| --- | --- | --- |
+| eventType | Required: always. The type of event. Value must be 12 \(Record Event Details\). The value cannot be changed for an existing event. | Integer &gt;= 0 |
+| id | The event’s unique identifier. Exclude to add an event. Include to update an existing event. | Integer &gt; 0 |
 
 `[PlatformAddress]/api/connector/v1/customers/getAll`
 
@@ -22,7 +25,7 @@ Returns all customers from the specified interval according to the time filter \
 | --- | --- | --- | --- |
 | `ClientToken` | string | required | Token identifying the client application. |
 | `AccessToken` | string | required | Access token of the client application. |
-| `TimeFilter` | string [Customer time filter](customers.md#customer-time-filter) | required | Time filter of the interval. |
+| `TimeFilter` | string [Customer time filter](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer-time-filter) | required | Time filter of the interval. |
 | `StartUtc` | string | required | Start of the interval in UTC timezone in ISO 8601 format. |
 | `EndUtc` | string | required | End of the interval in UTC timezone in ISO 8601 format. |
 
@@ -69,7 +72,7 @@ Returns all customers from the specified interval according to the time filter \
 
 | Property | Type |  | Description |
 | --- | --- | --- | --- |
-| `Customers` | array of [Customer](customers.md#customer) | required | The customers. |
+| `Customers` | array of [Customer](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer) | required | The customers. |
 
 #### Customer
 
@@ -80,9 +83,9 @@ Returns all customers from the specified interval according to the time filter \
 | `FirstName` | string | optional | First name of the customer. |
 | `LastName` | string | required | Last name of the customer. |
 | `SecondLastName` | string | optional | Second last name of the customer. |
-| `Title` | string [Title](customers.md#title) | optional | Title prefix of the customer. |
-| `Gender` | string [Gender](customers.md#gender) | optional | Gender of the customer. |
-| `NationalityCode` | string | optional | ISO 3166-1 code of the [Country](configuration.md#country). |
+| `Title` | string [Title](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#title) | optional | Title prefix of the customer. |
+| `Gender` | string [Gender](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#gender) | optional | Gender of the customer. |
+| `NationalityCode` | string | optional | ISO 3166-1 code of the [Country](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/configuration.md#country). |
 | `LanguageCode` | string | optional | Language and culture code of the customers preferred language. E.g. `en-US` or `fr-FR`. |
 | `BirthDate` | string | optional | Date of birth in ISO 8601 format. |
 | `BirthPlace` | string | optional | Place of birth. |
@@ -91,13 +94,13 @@ Returns all customers from the specified interval according to the time filter \
 | `TaxIdentificationNumber` | string | optional | Tax identification number of the customer. |
 | `LoyaltyCode` | string | optional | Loyalty code of the customer. |
 | `Notes` | string | optional | Internal notes about the customer. |
-| `Classifications` | array of [Customer classification](customers.md#customer-classification) | required | Classifications of the customer. |
-| `Options` | array of [Customer option](customers.md#customer-option) | required | Options of the customer. |
-| `Passport` | [Document](customers.md#document) | optional | Passport details of the customer. |
-| `IdentityCard` | [Document](customers.md#document) | optional | Identity card details of the customer. |
-| `Visa` | [Document](customers.md#document) | optional | Visa details of the customer. |
-| `DriversLicense` | [Document](customers.md#document) | optional | Drivers license  details of the customer. |
-| `Address` | [Address](configuration.md#address) | optional | Address of the customer. |
+| `Classifications` | array of [Customer classification](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer-classification) | required | Classifications of the customer. |
+| `Options` | array of [Customer option](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer-option) | required | Options of the customer. |
+| `Passport` | [Document](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#document) | optional | Passport details of the customer. |
+| `IdentityCard` | [Document](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#document) | optional | Identity card details of the customer. |
+| `Visa` | [Document](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#document) | optional | Visa details of the customer. |
+| `DriversLicense` | [Document](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#document) | optional | Drivers license  details of the customer. |
+| `Address` | [Address](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/configuration.md#address) | optional | Address of the customer. |
 | `CreatedUtc` | string | required | Creation date and time of the customer in UTC timezone in ISO 8601 format. |
 | `UpdatedUtc` | string | required | Last update date and time of the customer in UTC timezone in ISO 8601 format. |
 
@@ -119,7 +122,7 @@ Returns all customers from the specified interval according to the time filter \
 | `Number` | string | optional | Number of the document \(e.g. passport number\). |
 | `Expiration` | string | optional | Expiration date in ISO 8601 format. |
 | `Issuance` | string | optional | Date of issuance in ISO 8601 format. |
-| `IssuingCountryCode` | string | optional | ISO 3166-1 code of the [Country](configuration.md#country). |
+| `IssuingCountryCode` | string | optional | ISO 3166-1 code of the [Country](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/configuration.md#country). |
 
 #### Customer classification
 
@@ -166,11 +169,11 @@ Returns all customers with the specified ids.
 | --- | --- | --- | --- |
 | `ClientToken` | string | required | Token identifying the client application. |
 | `AccessToken` | string | required | Access token of the client application. |
-| `CustomerIds` | array of string | required | Identifiers of [Customer](customers.md#customer)s. |
+| `CustomerIds` | array of string | required | Identifiers of [Customer](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer)s. |
 
 ### Response
 
-Same structure as in [Get all customers](customers.md#get-all-customers) operation.
+Same structure as in [Get all customers](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#get-all-customers) operation.
 
 ## Get all customers by emails
 
@@ -194,11 +197,11 @@ Returns all customers with the specified emails.
 | --- | --- | --- | --- |
 | `ClientToken` | string | required | Token identifying the client application. |
 | `AccessToken` | string | required | Access token of the client application. |
-| `Emails` | array of string | required | Emails of the [Customer](customers.md#customer)s. |
+| `Emails` | array of string | required | Emails of the [Customer](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer)s. |
 
 ### Response
 
-Same structure as in [Get all customers](customers.md#get-all-customers) operation.
+Same structure as in [Get all customers](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#get-all-customers) operation.
 
 ## Get all customers by name
 
@@ -221,12 +224,12 @@ Returns all customers with the specified first name and last name.
 | --- | --- | --- | --- |
 | `ClientToken` | string | required | Token identifying the client application. |
 | `AccessToken` | string | required | Access token of the client application. |
-| `FirstName` | string | required | First name of the [Customer](customers.md#customer). |
-| `LastName` | string | required | Last name of the [Customer](customers.md#customer). |
+| `FirstName` | string | required | First name of the [Customer](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer). |
+| `LastName` | string | required | Last name of the [Customer](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer). |
 
 ### Response
 
-Same structure as in [Get all customers](customers.md#get-all-customers) operation.
+Same structure as in [Get all customers](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#get-all-customers) operation.
 
 ## Search customers
 
@@ -249,7 +252,7 @@ Searches for customers that are active at the moment in the enterprise \(e.g. co
 | `ClientToken` | string | required | Token identifying the client application. |
 | `AccessToken` | string | required | Access token of the client application. |
 | `Name` | string | optional | Name to search by \(applies to first name, last name and full name\). |
-| `SpaceId` | string | optional | Identifier of [Space](enterprises.md#space) to search by \(members of [Reservation](reservations.md#reservation) assigned there will be returned\). |
+| `SpaceId` | string | optional | Identifier of [Space](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/enterprises.md#space) to search by \(members of [Reservation](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/reservations.md#reservation) assigned there will be returned\). |
 
 ### Response
 
@@ -292,14 +295,14 @@ Searches for customers that are active at the moment in the enterprise \(e.g. co
 
 | Property | Type |  | Description |
 | --- | --- | --- | --- |
-| `Customers` | array of [Customer search result](customers.md#customer-search-result) | required | The customer search results. |
+| `Customers` | array of [Customer search result](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer-search-result) | required | The customer search results. |
 
 #### Customer search result
 
 | Property | Type |  | Description |
 | --- | --- | --- | --- |
-| `Customer` | [Customer](customers.md#customer) | required | The found customer. |
-| `Reservation` | [Reservation](reservations.md#reservation) | optional | Reservation of the customer in case he currently stays in the enterprise. |
+| `Customer` | [Customer](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer) | required | The found customer. |
+| `Reservation` | [Reservation](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/reservations.md#reservation) | optional | Reservation of the customer in case he currently stays in the enterprise. |
 
 ## Get customers open items
 
@@ -323,8 +326,8 @@ Returns all open items of the specified customers, i.e. all unpaid items and all
 | --- | --- | --- | --- |
 | `ClientToken` | string | required | Token identifying the client application. |
 | `AccessToken` | string | required | Access token of the client application. |
-| `CustomerIds` | array of string | required | Unique identifiers of the [Customer](customers.md#customer)s. |
-| `Currency` | string | optional | ISO-4217 code of the [Currency](configuration.md#currency) the item costs should be converted to. |
+| `CustomerIds` | array of string | required | Unique identifiers of the [Customer](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer)s. |
+| `Currency` | string | optional | ISO-4217 code of the [Currency](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/configuration.md#currency) the item costs should be converted to. |
 
 ### Response
 
@@ -364,14 +367,14 @@ Returns all open items of the specified customers, i.e. all unpaid items and all
 
 | Property | Type |  | Description |
 | --- | --- | --- | --- |
-| `Customers` | array of [Customer items](customers.md#customer-items) | required | The customers with their items. |
+| `Customers` | array of [Customer items](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer-items) | required | The customers with their items. |
 
 #### Customer items
 
 | Property | Type |  | Description |
 | --- | --- | --- | --- |
-| `CustomerId` | string | required | Unique identifier of the [Customer](customers.md#customer). |
-| `Items` | array of [Accounting item](finance.md#accounting-item) | required | The open items. |
+| `CustomerId` | string | required | Unique identifier of the [Customer](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer). |
+| `Items` | array of [Accounting item](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/finance.md#accounting-item) | required | The open items. |
 
 ## Add customer
 
@@ -417,24 +420,24 @@ Adds a new customer to the system and returns details of the added customer. If 
 | `FirstName` | string | optional | First name of the customer. |
 | `LastName` | string | required | Last name of the customer. |
 | `SecondLastName` | string | optional | Second last name of the customer. |
-| `Title` | string [Title](customers.md#title) | optional | Title prefix of the customer. |
-| `NationalityCode` | string | optional | ISO 3166-1 code of the [Country](configuration.md#country). |
+| `Title` | string [Title](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#title) | optional | Title prefix of the customer. |
+| `NationalityCode` | string | optional | ISO 3166-1 code of the [Country](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/configuration.md#country). |
 | `BirthDate` | string | optional | Date of birth in ISO 8601 format. |
 | `BirthPlace` | string | optional | Place of birth. |
 | `Email` | string | optional | Email address of the customer. |
 | `Phone` | string | optional | Phone number of the customer \(possibly mobile\). |
 | `LoyaltyCode` | string | optional | Loyalty code of the customer. |
 | `Notes` | string | optional | Internal notes about the customer. |
-| `IdentityCard` | [Document](customers.md#document) | optional | Identity card details of the customer. |
-| `Passport` | [Document](customers.md#document) | optional | Passport details of the customer. |
-| `Visa` | [Document](customers.md#document) | optional | Visa details of the customer. |
-| `DriversLicense` | [Document](customers.md#document) | optional | Drivers license details of the customer. |
-| `Address` | [Address](configuration.md#address) | optional | Address of the customer. |
-| `Classifications` | array of [Customer classification](customers.md#customer-classification) | optional | Classifications of the customer. |
+| `IdentityCard` | [Document](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#document) | optional | Identity card details of the customer. |
+| `Passport` | [Document](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#document) | optional | Passport details of the customer. |
+| `Visa` | [Document](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#document) | optional | Visa details of the customer. |
+| `DriversLicense` | [Document](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#document) | optional | Drivers license details of the customer. |
+| `Address` | [Address](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/configuration.md#address) | optional | Address of the customer. |
+| `Classifications` | array of [Customer classification](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer-classification) | optional | Classifications of the customer. |
 
 ### Response
 
-The created [Customer](customers.md#customer) or an existing [Customer](customers.md#customer) with the specified email.
+The created [Customer](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer) or an existing [Customer](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer) with the specified email.
 
 ## Update customer
 
@@ -476,28 +479,28 @@ Updates personal information of a customer. Note that if any of the fields is le
 | --- | --- | --- | --- |
 | `ClientToken` | string | required | Token identifying the client application. |
 | `AccessToken` | string | required | Access token of the client application. |
-| `CustomerId` | string | required | Unique identifier of the [Customer](customers.md#customer). |
+| `CustomerId` | string | required | Unique identifier of the [Customer](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer). |
 | `FirstName` | string | optional | New first name. |
 | `LastName` | string | optional | New last name. |
 | `SecondLastName` | string | optional | New second last name. |
-| `Title` | string [Title](customers.md#title) | optional | New title. |
+| `Title` | string [Title](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#title) | optional | New title. |
 | `BirthDate` | string | optional | New birth date in ISO 8601 format. |
 | `BithPlace` | string | optional | New birth place. |
-| `NationalityCode` | string | optional | ISO 3166-1 code of the [Country](configuration.md#country). |
+| `NationalityCode` | string | optional | ISO 3166-1 code of the [Country](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/configuration.md#country). |
 | `Email` | string | optional | New email address. |
 | `Phone` | string | optional | New phone number. |
 | `LoyaltyCode` | string | optional | Loyalty code of the customer. |
 | `Notes` | string | optional | Internal notes about the customer. |
-| `IdentityCard` | [Document](customers.md#document) | optional | New identity card details. |
-| `Passport` | [Document](customers.md#document) | optional | New passport details. |
-| `Visa` | [Document](customers.md#document) | optional | New visa details. |
-| `DriversLicense` | [Document](customers.md#document) | optional | New drivers license details. |
-| `Address` | [Address](configuration.md#address) | optional | New address details. |
-| `Classifications` | array of [Customer classification](customers.md#customer-classification) | optional | New classifications of the customer. |
+| `IdentityCard` | [Document](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#document) | optional | New identity card details. |
+| `Passport` | [Document](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#document) | optional | New passport details. |
+| `Visa` | [Document](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#document) | optional | New visa details. |
+| `DriversLicense` | [Document](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#document) | optional | New drivers license details. |
+| `Address` | [Address](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/configuration.md#address) | optional | New address details. |
+| `Classifications` | array of [Customer classification](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer-classification) | optional | New classifications of the customer. |
 
 ### Response
 
-The updated [Customer](customers.md#customer).
+The updated [Customer](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer).
 
 ## Merge customers
 
@@ -520,8 +523,8 @@ Merges one customer to another. All entities attached to the source customer \(e
 | --- | --- | --- | --- |
 | `ClientToken` | string | required | Token identifying the client application. |
 | `AccessToken` | string | required | Access token of the client application. |
-| `SourceCustomerId` | string | required | Unique identifier of the source [Customer](customers.md#customer). |
-| `TargetCustomerId` | string | required | Unique identifier of the target [Customer](customers.md#customer). |
+| `SourceCustomerId` | string | required | Unique identifier of the source [Customer](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer). |
+| `TargetCustomerId` | string | required | Unique identifier of the target [Customer](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer). |
 
 ### Response
 
@@ -552,7 +555,7 @@ Attaches the specified file to the customer profile.
 | --- | --- | --- | --- |
 | `ClientToken` | string | required | Token identifying the client application. |
 | `AccessToken` | string | required | Access token of the client application. |
-| `CustomerId` | string | required | Unique identifier of the [Customer](customers.md#customer). |
+| `CustomerId` | string | required | Unique identifier of the [Customer](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer). |
 | `Name` | string | required | Name of the file. |
 | `Type` | string | required | MIME type of the file \(e.g. `application/pdf`\). |
 | `Data` | string | required | Base64-encoded data of the file. |

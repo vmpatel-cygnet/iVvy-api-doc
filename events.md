@@ -7,10 +7,8 @@ Updates information of a event.
 | Property | Type | Description |
 | --- | --- | --- |
 
-| id | The event’s unique identifier. Exclude to add an event. Include to update an existing event. | Integer &gt; 0 |
-| eventType | Required: always. The type of event. Value must be 12 \(Record Event Details\). The value cannot be changed for an existing event. | Integer &gt;= 0 |
 
-
+\| id \| The event’s unique identifier. Exclude to add an event. Include to update an existing event. \| Integer &gt; 0 \| \| eventType \| Required: always. The type of event. Value must be 12 \(Record Event Details\). The value cannot be changed for an existing event. \| Integer &gt;= 0 \|
 
 `[PlatformAddress]/api/connector/v1/customers/getAll`
 

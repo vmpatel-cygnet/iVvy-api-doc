@@ -148,13 +148,13 @@ Add or update event details.
 
 ### Parameters
 
-| Property | Description | Type |
-|----|----------------------|-----------------------------|
-| id | The event identifier | Required Must be an integer |
+| Property  | Description           | Type                        |
+|-----------|-----------------------|-----------------------------|
+| id        | The event identifier  | Required Must be an integer |
 
 ### Returns
 
-| Property | Description |
+| Property          | Description                                                        |
 |-------------------|--------------------------------------------------------------------|
 | id                | The unique event identifier                                        |
 | code              | The code for the event                                             |
@@ -183,7 +183,7 @@ Add or update event details.
 
 ### Throws
 
-| Code | Description |
+| Code                 | Description          |
 |----------------------|----------------------|
 | Specific Code: 24097 | Unable to find event |
 
@@ -199,10 +199,10 @@ Add or update event details.
 
 ### Parameters
 
-| Property | Description | Type |
-|---------|----------------------------------------------------|-----------------------------|
-| id      | The registration identifier                        | Required Must be an integer |
-| eventId | The event identifier to which registration belongs | Required Must be an integer |
+| Property  | Description                                           | Type                          |
+|---------  |----------------------------------------------------   |-----------------------------  |
+| id        | The registration identifier                           | Required Must be an integer   |
+| eventId   | The event identifier to which registration belongs    | Required Must be an integer   |
 
 ### Returns
 
@@ -216,6 +216,158 @@ Add or update event details.
 | lastName      | The last name of the event registration            |
 | phone         | The phone number of event registration             |
 | modifiedDate  | The date & time the registration was last modified |
+
+### Throws
+
+| Code                 | Description             |
+|----------------------|-------------------------|
+| Specific Code: 24207 | Unable to find event    |
+| Specific Code: 24208 | Invalid Registration Id |
+| Specific Code: 24209 | Registration not found  |
+
+
+
+## getRegistrationList
+
+
+### Parameters
+
+| Property  | Description                                           | Type                          |
+|---------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
+| perPage | The number of registrations to get in a single api call                                                           | Must be an integer greater than 0 and maximum 100 |
+| start   | The starting result of the page. Note this is zero based (i.e. sending start=0 will start from the first result.) | Must be an integer 0 or greater                   |
+| eventId | The event identifier                                                                                              | Must be a Integer                                 |
+
+### Additional Filter Properties
+
+| Property      | Description               | Type                                          |
+|-------------- |-------------------------  |--------------------------------------------   |
+| modifiedDate  | Filter by modified date   | [iVvy Timestamp Format](#timestamp-format)    |
+
+### Returns
+
+A collection object with the following properties in the results
+
+| Property          | Description                                       |
+|------------------|----------------------------------------------------|
+| id               | The unique registration identifier                 |
+| currentStatus    | The current status of the event                    |
+| isExhibitor      | Whether or not event registration is exhibitor     |
+| completedDate    | The registered date time of event registration     |
+| mainContactId    | The main contact id of event registration          |
+| firstName        | The first name of the event registration           |
+| lastName         | The last name of the event registration            |
+| phone            | The phone number of event registration             |
+| invoiceTotalCost | The total cost of event registration               |
+| invoiceTotalPaid | The total amount paid of event registration        |
+| modifiedDate     | The date & time the registration was last modified |
+
+The result from this call will be a collection of all the events the user has access to. This call also accepts the pagination and filter properties.
+
+The result from this call will be a [collection](#collections) of all the events
+the user has access to. This call also accepts the [pagination](#pagination) and
+[filter](#filtering) properties.
+
+### Throws
+
+| Property              | Description           |
+|----------------------|----------------------|
+| Specific Code: 24206 | Unable to find event |
+
+### getAttendee
+
+
+### Parameters
+
+| Property| Description                                    |Type
+|---------|------------------------------------------------|-----------------------------|
+| id      | The attendee identifier                        | Required Must be an integer |
+| eventId | The event identifier to which attendee belongs | Required Must be an integer |
+
+### Returns
+
+| Property                  | Description                                                           |
+|--------------------------|----------------------------------------------------------------------|
+| id                       | The unique registration identifier                                   |
+| registrationStatus       | The registration status of the event attendee                        |
+| contactId                | The contactId of event attendee                                      |
+| registrationId           | The registration id of event attendee                                |
+| ticketTitle              | The title of ticket                                                  |
+| firstName                | The first name of the event attendee                                 |
+| lastName                 | The last name of the event attendee                                  |
+| email                    | The email address of the event attendee                              |
+| hasAttended              | Whether attendee has attended event or not                           |
+| sessionHasAttended       | Whether attendee has attended session or not                         |
+| isPublic                 | Whether event attendee is public or not                              |
+| barcode                  | The barcode text of event attendee                                   |
+| barcodeUrl               | The barcode url of event attendee                                    |
+| ticketUrl                | The ticket url of event attendee                                     |
+| attendedDatetime         | The attended date time of event attendee                             |
+| sessionAttendedTimestamp | The session attended date time of event attendee                     |
+| cost                     | The cost of ticket of event attendee                                 |
+| customFields             | The array of custom fields data of event attendee with below details. (name = The name of the custom field, value = The value of the custom field for attendee) |
+
+
+### Throws
+
+| Property             | Description            |
+|----------------------|----------------------|
+| Specific Code: 24211 | Unable to find event |
+| Specific Code: 24212 | Invalid Attendee Id  |
+| Specific Code: 24213 | Attendee not found   |
+
+### getAttendeeList
+
+
+### Parameters
+
+| Property | Description | Type |
+|---------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
+| perPage | The number of attendees to get in a single api call                                                               | Must be an integer greater than 0 and maximum 100 |
+| start   | The starting result of the page. Note this is zero based (i.e. sending start=0 will start from the first result.) | Must be an integer 0 or greater                   |
+| eventId | The event identifier                                                                                              | Must be a Integer                                 |
+
+
+### Additional Filter Properties
+
+No filters available
+
+### Returns
+
+A collection object with the following properties in the results
+
+| Property                  | Description                                                           |
+|--------------------------|----------------------------------------------------------------------|
+| id                       | The unique registration identifier                                   |
+| registrationStatus       | The registration status of the event attendee                        |
+| contactId                | The contactId of event attendee                                      |
+| ticketTitle              | The title of ticket                                                  |
+| firstName                | The first name of the event attendee                                 |
+| lastName                 | The last name of the event attendee                                  |
+| email                    | The email address of the event attendee                              |
+| hasAttended              | Whether attendee has attended event or not                           |
+| sessionHasAttended       | Whether attendee has attended session or not                         |
+| isPublic                 | Whether event attndee is public or not                               |
+| barcode                  | The barcode text of event attendee                                   |
+| barcodeUrl               | The barcode url of event attendee                                    |
+| ticketUrl                | The ticket url of event attendee                                     |
+| attendedDatetime         | The attended date time of event attendee                             |
+| sessionAttendedTimestamp | The session attended date time of event attendee                     |
+| cost                     | The cost of ticket of event attendee                                 |
+| customFields             | The array of custom fields data of event attendee with below details. (name = The name of the custom field, value = The value of the custom field for attendee) |
+
+
+The result from this call will be a [collection](#collections) of all the events
+the user has access to. This call also accepts the [pagination](#pagination) and
+[filter](#filtering) properties.
+
+### Throws
+
+| Property             | Description          |
+|----------------------|----------------------|
+| Specific Code: 24210 | Unable to find event |
+
+
 
 
 

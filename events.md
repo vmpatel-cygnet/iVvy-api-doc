@@ -66,7 +66,39 @@ Add or update event details.
 
 ### Parameters
 
+
+| Property | Type |  | Description |
+| --- | --- | --- | --- |
+| `ClientToken` | string | required | Token identifying the client application. |
+| `AccessToken` | string | required | Access token of the client application. |
+| `TimeFilter` | string [Customer time filter](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer-time-filter) | required | Time filter of the interval. |
+| `StartUtc` | string | required | Start of the interval in UTC timezone in ISO 8601 format. |
+| `EndUtc` | string | required | End of the interval in UTC timezone in ISO 8601 format. |
+
+
+### Additional Filter Properties
+
+| Property | Type |  | Description |
+| --- | --- | --- | --- |
+| `ClientToken` | string | required | Token identifying the client application. |
+| `AccessToken` | string | required | Access token of the client application. |
+| `TimeFilter` | string [Customer time filter](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer-time-filter) | required | Time filter of the interval. |
+| `StartUtc` | string | required | Start of the interval in UTC timezone in ISO 8601 format. |
+| `EndUtc` | string | required | End of the interval in UTC timezone in ISO 8601 format. |
+
+
 ### Returns
+
+Add or update event details.
+
+| Property | Type |  | Description |
+| --- | --- | --- | --- |
+| `ClientToken` | string | required | Token identifying the client application. |
+| `AccessToken` | string | required | Access token of the client application. |
+| `TimeFilter` | string [Customer time filter](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer-time-filter) | required | Time filter of the interval. |
+| `StartUtc` | string | required | Start of the interval in UTC timezone in ISO 8601 format. |
+| `EndUtc` | string | required | End of the interval in UTC timezone in ISO 8601 format. |
+
 
 ### Example Request
 

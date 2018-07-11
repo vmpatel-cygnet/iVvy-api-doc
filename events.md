@@ -6,8 +6,8 @@ Add or update event details.
 
 ### Parameters
 
-| Property | Description | Required | Type |
-| --- | --- | --- |
+| Property | Type | Required | Description |
+| --- | --- | --- | --- |
 | id  | The event’s unique identifier. Exclude to add an event. Include to update an existing event. | Required | Integer &gt; 0 |
 | eventType | The type of event. Value must be 12 \(Record Event Details\). The value cannot be changed for an existing event. | Required | Integer &gt;= 0 |
 | code | The event’s unique code. Can be excluded when adding an event \(system will assign a unique code\). The value cannot be changed for an existing event. |  | String Max length: 12 |

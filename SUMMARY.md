@@ -5,5 +5,4 @@
   * [Introduction](getting-started/introduction.md)
   * [Obtaining Keys](getting-started/obtaining-keys.md)
 * [Events](events.md)
-* [Events](events-1.md)
 

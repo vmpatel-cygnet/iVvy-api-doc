@@ -4,11 +4,14 @@
 
 Updates information of a event.
 
-| Property | Type | Description |
+| Property | Description | Required | Notes |
 | --- | --- | --- |
-
-
-\| id \| The event’s unique identifier. Exclude to add an event. Include to update an existing event. \| Integer &gt; 0 \| \| eventType \| Required: always. The type of event. Value must be 12 \(Record Event Details\). The value cannot be changed for an existing event. \| Integer &gt;= 0 \|
+| id  | The event’s unique identifier. Exclude to add an event. Include to update an existing event. | Required | Integer &gt; 0 |
+| eventType | The type of event. Value must be 12 \(Record Event Details\). The value cannot be changed for an existing event. | Required | Integer &gt;= 0 |
+| code | The event’s unique code. Can be excluded when adding an event \(system will assign a unique code\). The value cannot be changed for an existing event. |  | String Max length: 12 |
+| title | Required: when adding an event. The title of the event. |  | String Max length: 140 |
+| timezone | Required: when adding an event. The timezone of the event. | Timezone |  |
+| startDateTime | Required: when adding an event. The start date & time of the event. |  | Timestamp |
 
 `[PlatformAddress]/api/connector/v1/customers/getAll`
 

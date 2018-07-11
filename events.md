@@ -87,6 +87,9 @@ Add or update event details.
 
 ### Additional Filter Properties
 
+
+| Property | Description | Type |
+| --- | --- | --- |
 | afterDate  | Filter by start date                           | [iVvy Timestamp Format](#timestamp-format) |
 | beforeDate | Filter by end date                             | [iVvy Timestamp Format](#timestamp-format) |
 | status     | Filter by status Array of the following values | Must be an array                           |
@@ -96,6 +99,8 @@ Add or update event details.
 
 Add or update event details.
 
+| Property | Description | 
+| --- | --- |
 | id                            | The unique event identifier                                                                                                                                                                  | 
 | code                          | The code for the event                                                                                                                                                                       | 
 | eventType                     | The type of event.                                                                                                                                                                           | 

@@ -148,106 +148,75 @@ Add or update event details.
 
 ### Parameters
 
+| Property | Description | Type |
+|----|----------------------|-----------------------------|
+| id | The event identifier | Required Must be an integer |
+
 ### Returns
 
-### Example Request
+| Property | Description |
+|-------------------|--------------------------------------------------------------------|
+| id                | The unique event identifier                                        |
+| code              | The code for the event                                             |
+| title             | The title of the event                                             |
+| domainName        | The domain name of the event                                       |
+| startDateTime     | The start of the event, at UTC                                     |
+| endDateTime       | The end of the event, at UTC                                       |
+| numRegistered     | The number of registrations                                        |
+| currentStatus     | The current status of the event                                    |
+| appTitle          | The title to display on mobile platforms                           |
+| twitter           | Twitter hashtag for this event                                     |
+| appBanner         | Banner to display on mobile platforms                              |
+| map               | Map of the event                                                   |
+| includeSpeakers   | Whether or not the event includes speakers                         |
+| displaySpeakers   | Whether or not the speakers are displayed on the event website     |
+| includeSponsors   | Whether or not the event includes sponsors                         |
+| displaySponsors   | Whether or not there are sponsors displayed on the event website   |
+| includeBooths     | Whether or not the event includes exhibition booths                |
+| displayExhibitors | Whether or not there are exhibitors displayed on the event website |
+| includeAbstracts  | Whether or not the event includes abstracts                        |
+| displayAbstracts  | Whether or not there are abstracts displayed on the event website  |
+| includeHotels     | Whether or not the event includes hotel accommodation              |
+| includeTravel     | Whether or not the event includes travel (flights and transfers)   |
+| includeMembership | Whether or not the event includes memberships                      |
+| eventTags         | The tags of the event  (id = The unique identifier for the event tag, name = The name of the event tag)                                             |
 
-### Example Response
+### Throws
+
+| Code | Description |
+|----------------------|----------------------|
+| Specific Code: 24097 | Unable to find event |
 
 
-
-| Property | Type |  | Description |
-| --- | --- | --- | --- |
-| `ClientToken` | string | required | Token identifying the client application. |
-| `AccessToken` | string | required | Access token of the client application. |
-| `Emails` | array of string | required | Emails of the [Customer](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer)s. |
+The event identifier must be provided as part of this call to fetch the specific event. E.g. {"id":1} can be used to fetch the details of an event with the identifier of 1.
 
 ### Response
 
-Same structure as in [Get all customers](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#get-all-customers) operation.
+
+## getRegistration
+
+Add or update event details.
 
 ### Parameters
 
-| Property | Description | Required | Type |
-| --- | --- | --- |
-| id  | The event’s unique identifier. Exclude to add an event. Include to update an existing event. | Required | Integer &gt; 0 |
-| eventType | The type of event. Value must be 12 \(Record Event Details\). The value cannot be changed for an existing event. | Required | Integer &gt;= 0 |
-| code | The event’s unique code. Can be excluded when adding an event \(system will assign a unique code\). The value cannot be changed for an existing event. |  | String Max length: 12 |
-| title | Required: when adding an event. The title of the event. |  | String Max length: 140 |
-| timezone | Required: when adding an event. The timezone of the event. | Timezone |  |
-| startDateTime | Required: when adding an event. The start date & time of the event. |  | Timestamp |
-| endDateTime | Required: when adding an event. The end date & time of the event. The value must be on or after startDateTime. |  | Timestamp |
-| capacity | The maximum number of attendees who can register for the event. A value of 0 \(zero\) represents no limit. |  | Integer &gt;= 0 |
-| budget | A budget amount assigned to the event. |  | Float |
-| costCenterId | A cost center assigned to the event. The value is an identifier of a cost center in the account, which must be assignable to events. |  | Integer &gt; 0 |
-| primaryContactUserId | The primary contact user of the event. The value is an identifier of a user in the account. |  | Integer &gt; 0 |
-
-This action call accepts the parameters of an event and will; 
-
-1\) Add a new event to the account 
-
-2\) Update an existing event in the account when the id parameter is provided.
-
-NOTE: This action call only supports “Record Event Details” type events \(i.e. eventType value of 12\).
-
-### Response
-
 | Property | Description | Type |
-| --- | --- | --- | --- |
-| success | Whether or not the action succeeded \(i.e. the event as added or updated\). | Boolean |
-| id | The event’s unique identifier. The value will be null on failure. | Integer &gt; 0 |
-| code | The event’s unique code. The value will be null on failure. | String Max length: 12 |
+|---------|----------------------------------------------------|-----------------------------|
+| id      | The registration identifier                        | Required Must be an integer |
+| eventId | The event identifier to which registration belongs | Required Must be an integer |
 
-### Parameters
+### Returns
 
-| Property | Description | Required | Type |
-| --- | --- | --- |
-| id  | The event’s unique identifier. Exclude to add an event. Include to update an existing event. | Required | Integer &gt; 0 |
-| eventType | The type of event. Value must be 12 \(Record Event Details\). The value cannot be changed for an existing event. | Required | Integer &gt;= 0 |
-| code | The event’s unique code. Can be excluded when adding an event \(system will assign a unique code\). The value cannot be changed for an existing event. |  | String Max length: 12 |
-| title | Required: when adding an event. The title of the event. |  | String Max length: 140 |
-| timezone | Required: when adding an event. The timezone of the event. | Timezone |  |
-| startDateTime | Required: when adding an event. The start date & time of the event. |  | Timestamp |
-| endDateTime | Required: when adding an event. The end date & time of the event. The value must be on or after startDateTime. |  | Timestamp |
-| capacity | The maximum number of attendees who can register for the event. A value of 0 \(zero\) represents no limit. |  | Integer &gt;= 0 |
-| budget | A budget amount assigned to the event. |  | Float |
-| costCenterId | A cost center assigned to the event. The value is an identifier of a cost center in the account, which must be assignable to events. |  | Integer &gt; 0 |
-| primaryContactUserId | The primary contact user of the event. The value is an identifier of a user in the account. |  | Integer &gt; 0 |
+| Property | Description |
+|---------------|----------------------------------------------------|
+| id            | The unique registration identifier                 |
+| currentStatus | The current status of the event                    |
+| isExhibitor   | Whether or not event registration is exhibitor     |
+| completedDate | The registered date time of event registration     |
+| firstName     | The first name of the event registration           |
+| lastName      | The last name of the event registration            |
+| phone         | The phone number of event registration             |
+| modifiedDate  | The date & time the registration was last modified |
 
-This action call accepts the parameters of an event and will; 
-
-1\) Add a new event to the account 
-
-2\) Update an existing event in the account when the id parameter is provided.
-
-NOTE: This action call only supports “Record Event Details” type events \(i.e. eventType value of 12\).
-
-### Response
-
-| Property | Description | Type |
-| --- | --- | --- | --- |
-| success | Whether or not the action succeeded \(i.e. the event as added or updated\). | Boolean |
-| id | The event’s unique identifier. The value will be null on failure. | Integer &gt; 0 |
-| code | The event’s unique code. The value will be null on failure. | String Max length: 12 |
-
-
-```javascript
-{
-    "ClientToken": "E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
-    "AccessToken": "C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
-    "TimeFilter": "Created",
-    "StartUtc": "2016-01-01T00:00:00Z",
-    "EndUtc": "2016-01-07T00:00:00Z"
-}
-```
-
-| Property | Type |  | Description |
-| --- | --- | --- | --- |
-| `ClientToken` | string | required | Token identifying the client application. |
-| `AccessToken` | string | required | Access token of the client application. |
-| `TimeFilter` | string [Customer time filter](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer-time-filter) | required | Time filter of the interval. |
-| `StartUtc` | string | required | Start of the interval in UTC timezone in ISO 8601 format. |
-| `EndUtc` | string | required | End of the interval in UTC timezone in ISO 8601 format. |
 
 
 

@@ -206,7 +206,7 @@ Add or update event details.
 
 ### Returns
 
-| Property | Description |
+| Property      | Description                                        |
 |---------------|----------------------------------------------------|
 | id            | The unique registration identifier                 |
 | currentStatus | The current status of the event                    |
@@ -270,7 +270,7 @@ the user has access to. This call also accepts the [pagination](#pagination) and
 
 ### Throws
 
-| Property              | Description           |
+| Code                 | Description          |
 |----------------------|----------------------|
 | Specific Code: 24206 | Unable to find event |
 
@@ -310,7 +310,7 @@ the user has access to. This call also accepts the [pagination](#pagination) and
 
 ### Throws
 
-| Property             | Description            |
+| Code                 | Description          |
 |----------------------|----------------------|
 | Specific Code: 24211 | Unable to find event |
 | Specific Code: 24212 | Invalid Attendee Id  |
@@ -363,7 +363,7 @@ the user has access to. This call also accepts the [pagination](#pagination) and
 
 ### Throws
 
-| Property             | Description          |
+| Code                 | Description          |
 |----------------------|----------------------|
 | Specific Code: 24210 | Unable to find event |
 
@@ -402,3 +402,81 @@ Example: Invite contacts with identifiers 1, 2 and 3 to event with the identifie
   "event":4,"contacts":[1,2,3]
 }
 ```
+
+### Response
+
+```javascript
+{
+    "results":[
+        {
+            "contact":1,
+            "status":true,
+            "inviteLinkYes":"http://....",
+            "inviteLinkNo":"http://...."
+        },
+        {"contact":2,"status":false},
+        {
+            "contact":3,
+            "status":true
+            "inviteLinkYes":"http://....",
+            "inviteLinkNo":"http://...."
+        }
+    ]
+}
+
+```
+
+
+### getSponsorshipList
+
+#### Parameters
+
+| Property      | Description  | Type                         |
+|-------|----------------------|-----------------------------|
+| event | The event identifier | Required Must be an integer |
+
+#### Returns
+
+A collection array with the following object properties in the results
+
+| Property              | Description                                                                   |
+|-----------------------|-------------------------------------------------------------------------------|
+| id                    | The unique sponsor identifier                                                 |
+| name                  | The name of the sponsor                                                       |
+| description           | The description of the sponsor                                                |
+| websiteAddress        | The URL to the sponsor details                                                |
+| logoImageUrl          | The URL to the sponsor details                                                |
+| level                 | The sponsorship level of the sponsor                                          |
+| customLevelId         | The custom level identifier if this sponsor has a custom level assigned to it |
+| sponsorshipAmount     | How much this sponsorship is for                                              |
+| sponsorshipAmountPaid | How much has been paid by the sponsor so far                                  |
+
+#### Throws
+
+| Code                 | Description                  |
+|----------------------|------------------------------|
+| Specific Code: 24094 | Event does not have sponsors |
+| Specific Code: 24100 | Unable to find event         |
+
+Lists the sponsors that are sponsoring the event.
+
+Example: Fetch the list of sponsors on an event
+
+#### Request
+
+```javascript
+{
+  "event":15593
+}
+```
+
+
+#### Response
+
+```javascript
+{
+"meta":{"totalResults":1,"start":0,"perPage":1,"count":1},"results":[{"id":"1","name":"Test Sponsor for event 1","description":"...","websiteAddress":"www.sponsor1.com","logoI
+mageUrl":"https://.../554ac739bcc9a.png","level":"9","customLevelId":null,"sponsorshipAmount":"44","sponsorshipAmountPaid":"4"}]
+}
+```
+

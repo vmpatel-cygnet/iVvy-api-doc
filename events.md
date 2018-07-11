@@ -31,7 +31,7 @@ NOTE: This action call only supports “Record Event Details” type events \(i.
 ### Returns
 
 | Property | Description | Type |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | success | Whether or not the action succeeded \(i.e. the event as added or updated\). | Boolean |
 | id | The event’s unique identifier. The value will be null on failure. | Integer &gt; 0 |
 | code | The event’s unique code. The value will be null on failure. | String Max length: 12 |
@@ -43,11 +43,17 @@ NOTE: This action call only supports “Record Event Details” type events \(i.
 
 ```javascript
 {
-    "ClientToken": "E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
-    "AccessToken": "C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
-    "Emails": [
-        "john@doe.com"
-    ]
+    "eventType": 12,
+  "title": "A New Event",
+  "timezone": "Australia/Sydney",
+  "startDateTime": "2018-03-05 03:00:00 UTC",
+  "endDateTime": "2018-03-05 06:00:00 UTC",
+  "capacity": 10,
+  "budget": 150,
+  "costCenterId": 834,
+  "primaryContactUserId": 7821,
+  "eventTypeIds": [56,57],
+  "isAccommIncluded": false
 }
 ```
 ### Example Response
@@ -67,13 +73,16 @@ Add or update event details.
 ### Parameters
 
 
-| Property | Type |  | Description |
-| --- | --- | --- | --- |
-| `ClientToken` | string | required | Token identifying the client application. |
-| `AccessToken` | string | required | Access token of the client application. |
-| `TimeFilter` | string [Customer time filter](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#customer-time-filter) | required | Time filter of the interval. |
-| `StartUtc` | string | required | Start of the interval in UTC timezone in ISO 8601 format. |
-| `EndUtc` | string | required | End of the interval in UTC timezone in ISO 8601 format. |
+| Property                  |Description                                                                   | Required | Type |
+|---------------------------|-------------------------------------------------------------------------------------------------------------------|---|-----------------------------------|
+| perPage                   | The number of events to get in a single api call                                                                  |	| Must be an integer greater than 0 |
+| start                     | The starting result of the page. Note this is zero based (i.e. sending start=0 will start from the first result.) |	| Must be an integer 0 or greater   |
+| includeVenueDetails       | If the response should include venue details                                                                      |	| Must be a boolean                 |
+| includeTicketDetails      | If the response should include ticket details                                                                     |	| Must be a boolean                 |
+| includeInformationDetails | If the response should include the event information                                                              |	| Must be a boolean                 |
+| includeHomepageContent    | If the response should include the homepage content of the website                                                |	| Must be a boolean                 |
+| orderBy                   | Sort results                                                                                                      |	| Supported parameter “startDate”   |
+| orderDir                  | Sort direction                                                                                                    |	| ‘asc’ or ‘desc’                   |
 
 
 ### Additional Filter Properties

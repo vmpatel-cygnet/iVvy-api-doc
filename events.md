@@ -59,6 +59,29 @@ NOTE: This action call only supports “Record Event Details” type events \(i.
   "code": "BAS4G248"
 }
 
+## getEventList
+
+Add or update event details.
+
+### Parameters
+
+### Returns
+
+### Example Request
+
+### Example Response
+
+## addOrUpdateEvent
+
+Add or update event details.
+
+### Parameters
+
+### Returns
+
+### Example Request
+
+### Example Response
 
 
 
@@ -72,82 +95,37 @@ NOTE: This action call only supports “Record Event Details” type events \(i.
 
 Same structure as in [Get all customers](https://github.com/vmpatel-cygnet/iVvy-api-doc/tree/da8f3b2c149fd0c85ce9e6676e2bcac534d44bcf/events/customers.md#get-all-customers) operation.
 
-{% api-method method="get" host="\[PlatformAddress\]" path="/api/1.0/event/addOrUpdateEvent" %}
-{% api-method-summary %}
-addOrUpdateEvent
-{% endapi-method-summary %}
+### Parameters
 
-{% api-method-description %}
-Updates information of a event.  
-{% endapi-method-description %}
+| Property | Description | Required | Type |
+| --- | --- | --- |
+| id  | The event’s unique identifier. Exclude to add an event. Include to update an existing event. | Required | Integer &gt; 0 |
+| eventType | The type of event. Value must be 12 \(Record Event Details\). The value cannot be changed for an existing event. | Required | Integer &gt;= 0 |
+| code | The event’s unique code. Can be excluded when adding an event \(system will assign a unique code\). The value cannot be changed for an existing event. |  | String Max length: 12 |
+| title | Required: when adding an event. The title of the event. |  | String Max length: 140 |
+| timezone | Required: when adding an event. The timezone of the event. | Timezone |  |
+| startDateTime | Required: when adding an event. The start date & time of the event. |  | Timestamp |
+| endDateTime | Required: when adding an event. The end date & time of the event. The value must be on or after startDateTime. |  | Timestamp |
+| capacity | The maximum number of attendees who can register for the event. A value of 0 \(zero\) represents no limit. |  | Integer &gt;= 0 |
+| budget | A budget amount assigned to the event. |  | Float |
+| costCenterId | A cost center assigned to the event. The value is an identifier of a cost center in the account, which must be assignable to events. |  | Integer &gt; 0 |
+| primaryContactUserId | The primary contact user of the event. The value is an identifier of a user in the account. |  | Integer &gt; 0 |
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="eventType" type="integer" required=false %}
-12
-{% endapi-method-parameter %}
+This action call accepts the parameters of an event and will; 
 
-{% api-method-parameter name="title" type="string" required=false %}
-A New Event
-{% endapi-method-parameter %}
+1\) Add a new event to the account 
 
-{% api-method-parameter name="timezone" type="string" required=false %}
-Australia/Sydney
-{% endapi-method-parameter %}
+2\) Update an existing event in the account when the id parameter is provided.
 
-{% api-method-parameter name="startDateTime" type="string" required=false %}
-2018-03-05 03:00:00 UTC
-{% endapi-method-parameter %}
+NOTE: This action call only supports “Record Event Details” type events \(i.e. eventType value of 12\).
 
-{% api-method-parameter name="endDateTime" type="string" required=false %}
-2018-03-05 06:00:00 UTC
-{% endapi-method-parameter %}
+### Response
 
-{% api-method-parameter name="capacity" type="integer" required=false %}
-10
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="budget" type="integer" required=false %}
-150
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="costCenterId" type="integer" required=false %}
-834
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="primaryContactUserId" type="integer" required=false %}
-7821
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="eventTypeIds" type="array" required=false %}
-\[56,57\]
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="isAccommIncluded" type="boolean" required=false %}
-false
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-  "success": true,
-  "id": 98481,
-  "code": "BAS4G248"
-}
-
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+| Property | Description | Type |
+| --- | --- | --- | --- |
+| success | Whether or not the action succeeded \(i.e. the event as added or updated\). | Boolean |
+| id | The event’s unique identifier. The value will be null on failure. | Integer &gt; 0 |
+| code | The event’s unique code. The value will be null on failure. | String Max length: 12 |
 
 ### Parameters
 
@@ -181,156 +159,6 @@ NOTE: This action call only supports “Record Event Details” type events \(i.
 | id | The event’s unique identifier. The value will be null on failure. | Integer &gt; 0 |
 | code | The event’s unique code. The value will be null on failure. | String Max length: 12 |
 
-{% api-method method="get" host="\[PlatformAddress\]" path="/api/1.0/event/getEventList" %}
-{% api-method-summary %}
-getEventList
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
-
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
-{% api-method method="get" host="\[PlatformAddress\]" path="/api/1.0/event/addOrUpdateEvent" %}
-{% api-method-summary %}
-addOrUpdateEvent
-{% endapi-method-summary %}
-
-{% api-method-description %}
-Updates information of a event.  
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="eventType" type="integer" required=false %}
-12
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="title" type="string" required=false %}
-A New Event
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="timezone" type="string" required=false %}
-Australia/Sydney
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="startDateTime" type="string" required=false %}
-2018-03-05 03:00:00 UTC
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="endDateTime" type="string" required=false %}
-2018-03-05 06:00:00 UTC
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="capacity" type="integer" required=false %}
-10
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="budget" type="integer" required=false %}
-150
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="costCenterId" type="integer" required=false %}
-834
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="primaryContactUserId" type="integer" required=false %}
-7821
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="eventTypeIds" type="array" required=false %}
-\[56,57\]
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="isAccommIncluded" type="boolean" required=false %}
-false
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-  "success": true,
-  "id": 98481,
-  "code": "BAS4G248"
-}
-
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-### Parameters
-
-| Property | Description | Required | Type |
-| --- | --- | --- |
-| id  | The event’s unique identifier. Exclude to add an event. Include to update an existing event. | Required | Integer &gt; 0 |
-| eventType | The type of event. Value must be 12 \(Record Event Details\). The value cannot be changed for an existing event. | Required | Integer &gt;= 0 |
-| code | The event’s unique code. Can be excluded when adding an event \(system will assign a unique code\). The value cannot be changed for an existing event. |  | String Max length: 12 |
-| title | Required: when adding an event. The title of the event. |  | String Max length: 140 |
-| timezone | Required: when adding an event. The timezone of the event. | Timezone |  |
-| startDateTime | Required: when adding an event. The start date & time of the event. |  | Timestamp |
-| endDateTime | Required: when adding an event. The end date & time of the event. The value must be on or after startDateTime. |  | Timestamp |
-| capacity | The maximum number of attendees who can register for the event. A value of 0 \(zero\) represents no limit. |  | Integer &gt;= 0 |
-| budget | A budget amount assigned to the event. |  | Float |
-| costCenterId | A cost center assigned to the event. The value is an identifier of a cost center in the account, which must be assignable to events. |  | Integer &gt; 0 |
-| primaryContactUserId | The primary contact user of the event. The value is an identifier of a user in the account. |  | Integer &gt; 0 |
-
-This action call accepts the parameters of an event and will; 
-
-1\) Add a new event to the account 
-
-2\) Update an existing event in the account when the id parameter is provided.
-
-NOTE: This action call only supports “Record Event Details” type events \(i.e. eventType value of 12\).
-
-### Response
-
-| Property | Description | Type |
-| --- | --- | --- | --- |
-| success | Whether or not the action succeeded \(i.e. the event as added or updated\). | Boolean |
-| id | The event’s unique identifier. The value will be null on failure. | Integer &gt; 0 |
-| code | The event’s unique code. The value will be null on failure. | String Max length: 12 |
-
-{% api-method method="get" host="\[PlatformAddress\]" path="/api/1.0/event/getEventList" %}
-{% api-method-summary %}
-getEventList
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
 
 ```javascript
 {

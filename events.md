@@ -1,8 +1,8 @@
 # Events
 
-## Get all customers by emails
+## addOrUpdateEvent
 
-Returns all customers with the specified emails.
+Add or update event details.
 
 ### Parameters
 
@@ -28,7 +28,7 @@ This action call accepts the parameters of an event and will;
 
 NOTE: This action call only supports “Record Event Details” type events \(i.e. eventType value of 12\).
 
-### Response
+### Returns
 
 | Property | Description | Type |
 | --- | --- | --- | --- |
@@ -37,9 +37,9 @@ NOTE: This action call only supports “Record Event Details” type events \(i.
 | code | The event’s unique code. The value will be null on failure. | String Max length: 12 |
 
 
-### Request
+### Example Request
 
-`[PlatformAddress]/api/connector/v1/customers/getAllByEmails`
+`[PlatformAddress]/api/1.0/event/addOrUpdateEvent`
 
 ```javascript
 {
@@ -50,6 +50,17 @@ NOTE: This action call only supports “Record Event Details” type events \(i.
     ]
 }
 ```
+### Example Response
+
+```javascript
+{
+  "success": true,
+  "id": 98481,
+  "code": "BAS4G248"
+}
+
+
+
 
 | Property | Type |  | Description |
 | --- | --- | --- | --- |

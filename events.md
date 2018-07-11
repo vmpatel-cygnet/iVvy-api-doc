@@ -43,7 +43,7 @@ NOTE: This action call only supports “Record Event Details” type events \(i.
 
 ```javascript
 {
-    "eventType": 12,
+  "eventType": 12,
   "title": "A New Event",
   "timezone": "Australia/Sydney",
   "startDateTime": "2018-03-05 03:00:00 UTC",
@@ -369,6 +369,36 @@ the user has access to. This call also accepts the [pagination](#pagination) and
 
 
 
+### inviteContacts
 
+### Parameters
 
+| Property | Description                                            | Type                                  |
+|----------|--------------------------------------------------------|---------------------------------------|
+| event    | The event identifier to invite the contact to          | Required. Must be an integer.         |
+| contacts | An array of contact identifiers to invite to the event | Required Must be an array of integers |
 
+### Returns
+
+| Property      | Description                                       |
+|---------------|---------------------------------------------------|
+| results       | An array of objects with the following properties |
+| contact       | The contact identifier                            |
+| status        | The status of the request                         |
+| inviteLinkYes | Invitation link for the YES responses             |
+| inviteLinkNo  | Invitation link fo the NO responses               |
+
+To invite a contact to the event, pass through the event identifier and an array
+of contact identifiers through to this call. The result will be a an array
+indicating if each of the contacts invitation was successful or not, and if so
+the links for responding to the invitations for both yes and no.
+
+Example: Invite contacts with identifiers 1, 2 and 3 to event with the identifier 4
+
+### Request
+
+```javascript
+{
+  "event":4,"contacts":[1,2,3]
+}
+```

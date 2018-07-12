@@ -4,7 +4,7 @@
 
 Get list of event.
 
-## API Url
+## Api Url
 
 `[PlatformAddress]/api/1.0/event?action=getEventList`
 

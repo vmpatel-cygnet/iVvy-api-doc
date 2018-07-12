@@ -49,28 +49,14 @@ A collection object with the following properties in the results.
 | websiteTemplateBannerImageUrl | Banner that is displayed on the website |
 | venue | Details of the venue of the event \(if the includeVenueDetails flag is set on the request\) |
 | tickets | The tickets of an event \(if the includeTicketDetails flag is set on the request\) |
-| id | The unique identifier for the ticket |
-| title | Title of the ticket |
-| capacity | Capacity of the ticket |
-| description | Description of the ticket |
-| amount | Amount of the ticket |
-| isTaxFree | Amount of the ticket is tax free |
-| subscriptionGroups | Subscription groups assigned to the ticket This an array of objects with the following properties… |
-| id | The subscription group identifier |
-| groupName | The name for the group |
-| tagColour | The designated colour for the group |
 | information | Event website information \(if the includeInformationDetails flag is set on the request\) This is an array of objects with the following properties… |
-| description | Description of the information |
-| information | Content of the information |
-| fileUrl | Attached file url of event information |
-| sortOrder | The order in which to sort the information |
+
 | homepageContent | Content of the website home page \(if the includeHomepageContent flag is set on the request\). Note this is the contents of the HTML that is entered in as the home page content of the event. |
 | eventTags | The tags of the event |
-| id | The unique identifier for the event tag |
-| name | The name of the event tag |
+
 | modifiedDate | timestamp |
 
-#### Types of event
+#### Event types
 
 | Type | Description |
 | --- | --- |
@@ -90,7 +76,7 @@ A collection object with the following properties in the results.
 
 The result from this call will be a collection of all the events the user has access to. This call also accepts the pagination and filter properties.
 
-#### Status of the event
+#### Current status of event
 
 | Code | Description |
 | --- | --- |
@@ -98,7 +84,7 @@ The result from this call will be a collection of all the events the user has ac
 | 1 | Closed |
 | 3 | Launched |
 
-#### Details of the venue
+#### Venue details
 
 | Property | Description |
 | --- | --- |
@@ -106,4 +92,41 @@ The result from this call will be a collection of all the events the user has ac
 | description | The description of the venue |
 | address | The address of the venue |
 | imageUrl | The URL to the image of the venue |
+
+#### Event ticket details
+
+| Property | Description |
+| --- | --- |
+| id | The unique identifier for the ticket |
+| title | Title of the ticket |
+| capacity | Capacity of the ticket |
+| description | Description of the ticket |
+| amount | Amount of the ticket |
+| isTaxFree | Amount of the ticket is tax free |
+| subscriptionGroups | Subscription groups assigned to the ticket This an array of objects with the following properties… |
+
+#### Subscription group details
+
+| Property | Description |
+| --- | --- |
+| id | The subscription group identifier |
+| groupName | The name for the group |
+| tagColour | The designated colour for the group |
+
+#### Event website information details
+
+| Property | Description |
+| --- | --- |
+| description | Description of the information |
+| information | Content of the information |
+| fileUrl | Attached file url of event information |
+| sortOrder | The order in which to sort the information |
+
+#### Event tags
+
+| Property | Description |
+| --- | --- |
+| id | The unique identifier for the event tag |
+| name | The name of the event tag |
+
 

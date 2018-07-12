@@ -11,7 +11,7 @@ Invite contact(s) to event.
 ### Parameters
 
 | Property | Description |  Required |Type |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | event | The event identifier to invite the contact to | Required | integer. |
 | contacts | An array of contact identifiers to invite to the event | Required | array of integers |
 

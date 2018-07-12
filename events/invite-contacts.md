@@ -27,13 +27,14 @@ Invite contact(s) to event.
 
 To invite a contact to the event, pass through the event identifier and an array of contact identifiers through to this call. The result will be a an array indicating if each of the contacts invitation was successful or not, and if so the links for responding to the invitations for both yes and no.
 
-Example: Invite contacts with identifiers 1, 2 and 3 to event with the identifier 4
+`Example: Invite contacts with identifiers 1, 2 and 3 to event with the identifier 4`
 
 ### Example Request
 
 ```javascript
 {
-  "event":4,"contacts":[1,2,3]
+  "event":4,
+  "contacts":[1,2,3]
 }
 ```
 
@@ -48,7 +49,8 @@ Example: Invite contacts with identifiers 1, 2 and 3 to event with the identifie
             "inviteLinkYes":"http://....",
             "inviteLinkNo":"http://...."
         },
-        {"contact":2,"status":false},
+        {   "contact":2,
+            "status":false},
         {
             "contact":3,
             "status":true

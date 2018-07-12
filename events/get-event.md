@@ -1,6 +1,6 @@
 # Get Event
 
-## Description
+### Description
 
 Add or update event details.
 
@@ -41,7 +41,7 @@ Add or update event details.
 | includeHotels | Whether or not the event includes hotel accommodation |
 | includeTravel | Whether or not the event includes travel \(flights and transfers\) |
 | includeMembership | Whether or not the event includes memberships |
-| eventTags | The tags of the event  \(id = The unique identifier for the event tag, name = The name of the event tag\) |
+| eventTags | The tags of the event |
 
 ### Event tags
 

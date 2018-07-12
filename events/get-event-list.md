@@ -48,10 +48,6 @@ A collection object with the following properties in the results.
 | websiteUrl | The URL for the event website |
 | websiteTemplateBannerImageUrl | Banner that is displayed on the website |
 | venue | Details of the venue of the event \(if the includeVenueDetails flag is set on the request\) |
-| name | The venue name |
-| description | The description of the venue |
-| address | The address of the venue |
-| imageUrl | The URL to the image of the venue |
 | tickets | The tickets of an event \(if the includeTicketDetails flag is set on the request\) |
 | id | The unique identifier for the ticket |
 | title | Title of the ticket |
@@ -77,7 +73,7 @@ A collection object with the following properties in the results.
 #### Types of event
 
 | Type | Description |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- |
 | 0 | Other |
 | 1 | Party |
 | 2 | Festival |
@@ -97,8 +93,18 @@ The result from this call will be a collection of all the events the user has ac
 #### Status of the event
 
 | Code | Description |
-| --- | --- | --- | --- |
+| --- | --- |
 | 0 | Draft |
 | 1 | Closed |
 | 3 | Launched |
+
+
+#### Status of the event
+
+| Property | Description |
+| --- | --- |
+| name | The venue name |
+| description | The description of the venue |
+| address | The address of the venue |
+| imageUrl | The URL to the image of the venue |
 

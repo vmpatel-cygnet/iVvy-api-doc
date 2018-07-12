@@ -43,7 +43,7 @@ Lists the speakers of the event.
 
 ```javascript
 { 
-  “event”:15593
+  "event":15593
 }
 ```
 

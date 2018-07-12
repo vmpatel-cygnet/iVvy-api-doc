@@ -1,6 +1,6 @@
 # Get Attendee
 
-## Description
+### Description
 
 Get attendee details.
 

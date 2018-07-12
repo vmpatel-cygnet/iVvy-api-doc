@@ -14,7 +14,6 @@ Get poll list.
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
 | perPage | The number of event polls to get in a single api call                                                             | Required | integer (greater than 0 and maximum 100) |
-
 | start   | The starting result of the page. Note this is zero based (i.e. sending start=0 will start from the first result.) | Required | integer (0 or greater) |
 | eventId | The unique id of the event to which the poll belongs                                                              | Required | integer |
 

@@ -1,6 +1,6 @@
 # Create Login Token
 
-## Description
+### Description
 
 Create login token.
 
@@ -18,7 +18,7 @@ Create login token.
 
 ### Returns
 
-| Property | Description | Type |
+| Property | Description |
 |----------|--------------------------------------------------------------------------------------|
 | token    | Single use, time restricted token for the contact to login to the iVvy Event Website |
 | loginUrl | The URL that must be used to authenticate the user with the token                    |

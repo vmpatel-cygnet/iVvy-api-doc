@@ -1,10 +1,10 @@
 # Get Attendee List
 
-## Description
+### Description
 
 Get list of event.
 
-## Api Url
+### Api Url
 
 `[PlatformAddress]/api/1.0/event?action=getAttendeeList`
 
@@ -16,11 +16,11 @@ Get list of event.
 | start | The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\) | Required | integer \(0 or greater\) |
 | eventId | The event identifier | Required | integer |
 
-## Additional Filter Properties
+### Additional Filter Properties
 
 No filters available
 
-## Returns
+### Returns
 
 A collection object with the following properties in the results
 
@@ -44,7 +44,7 @@ A collection object with the following properties in the results
 | cost | The cost of ticket of event attendee |
 | customFields | The array of custom fields data of event attendee with below details |
 
-## Custom field details
+### Custom field details
 
 | Property | Description |
 | --- | --- |
@@ -53,17 +53,17 @@ A collection object with the following properties in the results
 
 The result from this call will be a [collection](./#collections) of all the events the user has access to. This call also accepts the [pagination](./#pagination) and [filter](./#filtering) properties.
 
-## Throws
+### Throws
 
 | Code | Description |
-| --- | --- |
+| -------------------- | -------------------- |
 | Specific Code: 24210 | Unable to find event |
 
-## Example Request
+### Example Request
 
 TODO
 
-## Example Response
+### Example Response
 
 TODO
 

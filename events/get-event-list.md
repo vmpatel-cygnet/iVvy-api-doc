@@ -32,7 +32,7 @@ Get list of event.
 
 ### Returns
 
-Add or update event details.
+A collection object with the following properties in the results.
 
 | Property | Description |
 | --- | --- |

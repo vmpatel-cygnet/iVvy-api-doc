@@ -49,3 +49,11 @@ poll is not specific to any session, but theevent of a whole
 | Specific Code: 24173 | The event does not exist                     |
 | Specific Code: 24214 | Valid id must be require to find poll detail |
 | Specific Code: 24174 | Unable to find event poll                    |
+
+### Example Request
+
+TODO 
+
+### Example Response
+
+TODO

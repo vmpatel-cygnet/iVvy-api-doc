@@ -1,12 +1,12 @@
 # Add or Update Event
 
-## Add or Update Event
+## Description
 
 Add or update event details.
 
 ### Api Url
 
-`[PlatformAddress]/api/1.0/event/addOrUpdateEvent`
+`[PlatformAddress]/api/1.0/event?action=addOrUpdateEvent`
 
 ### Parameters
 

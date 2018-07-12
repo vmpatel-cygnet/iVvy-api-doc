@@ -12,12 +12,12 @@ Get list of event.
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
-| perPage | The number of events to get in a single api call. | Required | Integer |
-| start | The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\) |  | Integer |
-| includeVenueDetails | If the response should include venue details |  | Boolean |
-| includeTicketDetails | If the response should include ticket details |  | Boolean |
-| includeInformationDetails | If the response should include the event information |  | Boolean |
-| includeHomepageContent | If the response should include the homepage content of the website |  | Boolean |
+| perPage | The number of events to get in a single api call. | Required | integer |
+| start | The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\) |  | integer |
+| includeVenueDetails | If the response should include venue details |  | boolean |
+| includeTicketDetails | If the response should include ticket details |  | boolean |
+| includeInformationDetails | If the response should include the event information |  | boolean |
+| includeHomepageContent | If the response should include the homepage content of the website |  | boolean |
 | orderBy | Sort results |  | Supported parameter “startDate” |
 | orderDir | Sort direction |  | ‘asc’ or ‘desc’ |
 

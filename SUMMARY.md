@@ -14,4 +14,13 @@
   * [Get Attendee List](events/get-attendee-list.md)
   * [Invite Contacts](events/invite-contacts.md)
   * [Get Sponsorship List](events/get-sponsorship-list.md)
+  * [Get Speaker List](events/get-speaker-list.md)
+  * [Create Login Token](events/create-login-token.md)
+  * [Get Poll List](events/get-poll-list.md)
+  * [Get Poll](events/get-poll.md)
+  * [Add Response](events/add-response.md)
+  * [Get Discussion List](events/get-discussion-list.md)
+  * [Add Discussion](events/add-discussion.md)
+  * [Add Question](events/add-question.md)
+* [Untitled](untitled.md)
 

@@ -98,8 +98,7 @@ The result from this call will be a collection of all the events the user has ac
 | 1 | Closed |
 | 3 | Launched |
 
-
-#### Status of the event
+#### Details of the venue
 
 | Property | Description |
 | --- | --- |

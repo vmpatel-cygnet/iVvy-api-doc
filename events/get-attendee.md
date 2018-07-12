@@ -36,7 +36,14 @@ Get attendee details.
 | attendedDatetime | The attended date time of event attendee |
 | sessionAttendedTimestamp | The session attended date time of event attendee |
 | cost | The cost of ticket of event attendee |
-| customFields | The array of custom fields data of event attendee with below details. \(name = The name of the custom field, value = The value of the custom field for attendee\) |
+| customFields | The array of custom fields data of event attendee with below details |
+
+### Custom field details
+
+| Property | Description |
+| --- | --- |
+| name | The name of the custom field |
+| value | The value of the custom field for attendee |
 
 ### Throws
 

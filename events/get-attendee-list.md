@@ -11,7 +11,7 @@ Get list of event.
 ### Parameters
 
 | Property | Description |  Required | Type |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | perPage | The number of attendees to get in a single api call | Required | integer (greater than 0 and maximum 100) |
 | start | The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\) | Required | integer (0 or greater) |
 | eventId | The event identifier | Required | integer |
@@ -42,7 +42,14 @@ A collection object with the following properties in the results
 | attendedDatetime | The attended date time of event attendee |
 | sessionAttendedTimestamp | The session attended date time of event attendee |
 | cost | The cost of ticket of event attendee |
-| customFields | The array of custom fields data of event attendee with below details. \(name = The name of the custom field, value = The value of the custom field for attendee\) |
+| customFields | The array of custom fields data of event attendee with below details |
+
+### Custom field details
+
+| Property | Description |
+| --- | --- |
+| name | The name of the custom field |
+| value | The value of the custom field for attendee |
 
 The result from this call will be a [collection](./#collections) of all the events the user has access to. This call also accepts the [pagination](./#pagination) and [filter](./#filtering) properties.
 

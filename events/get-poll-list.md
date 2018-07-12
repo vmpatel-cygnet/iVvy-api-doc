@@ -43,3 +43,11 @@ has access to. This call also accepts the pagination and filter properties.
 |----------------------|--------------------------|
 | Specific Code: 24172 | The event does not exist |
 
+### Example Request
+
+TODO 
+
+### Example Response
+
+TODO
+

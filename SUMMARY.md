@@ -10,4 +10,8 @@
   * [Get Event](events/get-event.md)
   * [Get Registration](events/get-registration.md)
   * [Get Registration List](events/get-registration-list.md)
+  * [Get Attendee](events/get-attendee.md)
+  * [Get Attendee List](events/get-attendee-list.md)
+  * [Invite Contacts](events/invite-contacts.md)
+  * [Get Sponsorship List](events/get-sponsorship-list.md)
 

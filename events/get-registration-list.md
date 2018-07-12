@@ -50,7 +50,6 @@ The result from this call will be a [collection](./#collections) of all the even
 | --- | --- |
 | Specific Code: 24206 | Unable to find event |
 
-
 ### Example Request
 
 TODO

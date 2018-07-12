@@ -1,6 +1,5 @@
 # Get Event
 
-
 ## Description
 
 Add or update event details.

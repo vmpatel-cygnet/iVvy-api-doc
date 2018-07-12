@@ -51,10 +51,9 @@ A collection object with the following properties in the results.
 | tickets | The tickets of an event \(if the includeTicketDetails flag is set on the request\) |
 | information | Event website information \(if the includeInformationDetails flag is set on the request\) This is an array of objects with the following properties… |
 
-| homepageContent | Content of the website home page \(if the includeHomepageContent flag is set on the request\). Note this is the contents of the HTML that is entered in as the home page content of the event. |
-| eventTags | The tags of the event |
+\| homepageContent \| Content of the website home page \(if the includeHomepageContent flag is set on the request\). Note this is the contents of the HTML that is entered in as the home page content of the event. \| \| eventTags \| The tags of the event \|
 
-| modifiedDate | timestamp |
+\| modifiedDate \| timestamp \|
 
 #### Event types
 
@@ -128,5 +127,4 @@ The result from this call will be a collection of all the events the user has ac
 | --- | --- |
 | id | The unique identifier for the event tag |
 | name | The name of the event tag |
-
 

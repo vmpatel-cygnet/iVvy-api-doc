@@ -36,7 +36,6 @@ Get registration details.
 | Specific Code: 24208 | Invalid Registration Id |
 | Specific Code: 24209 | Registration not found |
 
-
 ### Example Request
 
 TODO
@@ -44,3 +43,4 @@ TODO
 ### Example Response
 
 TODO
+

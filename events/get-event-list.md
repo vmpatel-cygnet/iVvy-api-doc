@@ -1,6 +1,5 @@
 # Get Event List
 
-
 ## Description
 
 Get list of event.
@@ -13,12 +12,12 @@ Get list of event.
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
-| perPage | The number of events to get in a single api call. | Required | integer |
-| start | The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\) |  | Must be an integer 0 or greater |
-| includeVenueDetails | If the response should include venue details |  | Must be a boolean |
-| includeTicketDetails | If the response should include ticket details |  | Must be a boolean |
-| includeInformationDetails | If the response should include the event information |  | Must be a boolean |
-| includeHomepageContent | If the response should include the homepage content of the website |  | Must be a boolean |
+| perPage | The number of events to get in a single api call. | Required | Integer |
+| start | The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\) |  | Integer |
+| includeVenueDetails | If the response should include venue details |  | Boolean |
+| includeTicketDetails | If the response should include ticket details |  | Boolean |
+| includeInformationDetails | If the response should include the event information |  | Boolean |
+| includeHomepageContent | If the response should include the homepage content of the website |  | Boolean |
 | orderBy | Sort results |  | Supported parameter “startDate” |
 | orderDir | Sort direction |  | ‘asc’ or ‘desc’ |
 
@@ -38,13 +37,13 @@ A collection object with the following properties in the results.
 | --- | --- |
 | id | The unique event identifier |
 | code | The code for the event |
-| eventType | The type of event. |
+| eventType | [The type of event.](get-event-list.md#types-of-event) |
 | title | The title of the event |
 | domainName | The domain name of the event |
 | startDateTime | The start of the event, at UTC |
 | endDateTime | The end of the event, at UTC |
 | numRegistered | The number of registrations |
-| currentStatus | The current status of the event |
+| currentStatus | [The current status of the event](get-event-list.md#status-of-the-event) |
 | contactEmail | The contact email address on the event |
 | websiteUrl | The URL for the event website |
 | websiteTemplateBannerImageUrl | Banner that is displayed on the website |
@@ -75,4 +74,31 @@ A collection object with the following properties in the results.
 | name | The name of the event tag |
 | modifiedDate | timestamp |
 
+#### Types of event
+
+| Type | Description |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | Other |
+| 1 | Party |
+| 2 | Festival |
+| 3 | Golf Day |
+| 4 | Wedding |
+| 5 | Meeting |
+| 6 | Seminar |
+| 7 | Conference |
+| 8 | Exhibition |
+| 9 | Roadshow |
+| 10 | Simple |
+| 11 | Party \(21st / 18th\) |
+| 12 | Record Event Details |
+
 The result from this call will be a collection of all the events the user has access to. This call also accepts the pagination and filter properties.
+
+#### Status of the event
+
+| Code | Description |
+| --- | --- | --- | --- |
+| 0 | Draft |
+| 1 | Closed |
+| 3 | Launched |
+

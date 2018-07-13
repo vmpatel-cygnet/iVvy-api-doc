@@ -22,5 +22,6 @@
   * [Get Discussion List](events/get-discussion-list.md)
   * [Add Discussion](events/add-discussion.md)
   * [Add Question](events/add-question.md)
-* [Untitled](untitled.md)
+* [Test](untitled/README.md)
+  * [Ping](untitled/ping.md)
 

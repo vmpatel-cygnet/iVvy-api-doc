@@ -56,7 +56,7 @@ The result from this call will be a [collection](./#collections) of all the even
 ### Throws
 
 | Code | Description |
-| -------------------- | -------------------- |
+| --- | --- |
 | Specific Code: 24210 | Unable to find event |
 
 ### Example Request

@@ -6,6 +6,7 @@ The iVvy API uses a timestamp format to represent dates and times. Every date us
 
 Where 
 
+| --- | --- |
 | yyyy | The 4 digit year of the date |
 | mm | The two digit month of the date, where January = 01 and December = 12 |
 | dd | The two digit day of the month |

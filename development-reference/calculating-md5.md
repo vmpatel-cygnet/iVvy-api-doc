@@ -12,7 +12,7 @@ $ echo -e "string to hash" | md5sum
 2fcc83d76f9b2d8ef372271d807a3364  -
 ```
 
-Note that any white space either side of the string will also be hashed, creating a different hash
+`Note that any white space either side of the string will also be hashed, creating a different hash`
 
 ```javascript
 $ echo -e "    string to hash    " | md5sum
@@ -21,7 +21,7 @@ $ echo -e "    string to hash    " | md5sum
 
 It is important you strip off any whitespace before hashing the string.
 
-Note also it is possible to hash an empty string (in the case there is no body in the request)...
+`Note also it is possible to hash an empty string (in the case there is no body in the request).`
 
 ```javascript
 $ echo -e -n "" | md5sum 
@@ -84,8 +84,7 @@ public class MD5Test
 
 ### Nodejs
 
-This code assumes you have the crypto-js library installed (npm install
-crypto-js)
+This code assumes you have the crypto-js library installed (npm install crypto-js)
 
 ```javascript
 $ cat md5.js 
@@ -99,9 +98,7 @@ $ node md5.js
 
 ### Objective-C
 
-MD5 funcationlity can be be included in IOS code by first adding the
-CommonCrypto library to your target, and including the following function in
-your appDelegate (or appropriate class)
+MD5 funcationlity can be be included in IOS code by first adding the CommonCrypto library to your target, and including the following function in your appDelegate (or appropriate class)
 
 ```javascript
 #import <CommonCrypto/CommonDigest.h>
@@ -123,5 +120,5 @@ your appDelegate (or appropriate class)
 #### PHP
 
 ```javascript
-echo md5('string to hash\\n')
+echo md5('string to hash\n')
 ```

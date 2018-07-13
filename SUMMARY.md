@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Initial page](README.md)
+* [Home](home.md)
 * [Getting Started](getting-started/README.md)
   * [Introduction](getting-started/introduction.md)
   * [Obtaining Keys](getting-started/obtaining-keys.md)
@@ -22,6 +23,12 @@
   * [Get Discussion List](events/get-discussion-list.md)
   * [Add Discussion](events/add-discussion.md)
   * [Add Question](events/add-question.md)
+* [Venues](venues.md)
 * [Test](test/README.md)
   * [Ping](test/ping.md)
+* [Partners](partners.md)
+* [Contacts](contacts.md)
+* [Development Reference](development-reference/README.md)
+  * [Calculating md5](development-reference/calculating-md5.md)
+* [Changelog](changelog.md)
 

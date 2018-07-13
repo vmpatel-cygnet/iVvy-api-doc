@@ -21,7 +21,7 @@ Get list of event.
 | orderBy | Sort results |  | Supported parameter “startDate” |
 | orderDir | Sort direction |  | ‘asc’ or ‘desc’ |
 
-### Additional Filter Properties
+### Additional [Filter ](../interpreting-the-response/filtering.md)Properties
 
 | Property | Description | Type |
 | --- | --- | --- |

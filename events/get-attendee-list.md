@@ -16,7 +16,7 @@ Get list of event.
 | start | The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\) | Required | integer \(0 or greater\) |
 | eventId | The event identifier | Required | integer |
 
-### Additional Filter Properties
+### Additional [Filter](../interpreting-the-response/filtering.md) Properties
 
 No filters available
 

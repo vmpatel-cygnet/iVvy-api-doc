@@ -24,13 +24,13 @@ It is important you strip off any whitespace before hashing the string.
 Note also it is possible to hash an empty string (in the case there is no body in the request)...
 
 ```javascript
-$ echo -e -n "" | md5sum
+$ echo -e -n "" | md5sum 
 d41d8cd98f00b204e9800998ecf8427e  -
 ```
 
 ### C\#
 
-   // Convert a string to a MD5 hash
+Convert a string to a MD5 hash
 
 ```javascript
    
@@ -48,13 +48,11 @@ static private string ByteToString(byte[] data) {
     }
     return sBuilder.ToString();
 }
-
 ```
 	
 ### Java
 
 ```javascript
-   
 import java.security.*;
 import java.io.File;
 import java.io.FileReader;
@@ -71,21 +69,17 @@ public class MD5Test
             javax.xml.bind.DatatypeConverter.printHexBinary(thedigest).toLowerCase());
     }
 }
-
-   
 ```
 
 ### Javascript
 
 ```javascript
-
 <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
 
 <script>
     var hash = CryptoJS.MD5("string to hash\n");
     alert("" + hash);
 </script>
-
 ```
 
 ### Nodejs
@@ -94,7 +88,6 @@ This code assumes you have the crypto-js library installed (npm install
 crypto-js)
 
 ```javascript
-
 $ cat md5.js 
 var CryptoJS = require('crypto-js');
 var hash = CryptoJS.MD5('string to hash\n');
@@ -102,8 +95,6 @@ console.log("" + hash);
 
 $ node md5.js 
 2fcc83d76f9b2d8ef372271d807a3364
-
-
 ```
 
 ### Objective-C
@@ -113,8 +104,7 @@ CommonCrypto library to your target, and including the following function in
 your appDelegate (or appropriate class)
 
 ```javascript
-
-   #import <CommonCrypto/CommonDigest.h>
+#import <CommonCrypto/CommonDigest.h>
 ...
 +(NSString*) md5:(NSString*)input
 {
@@ -128,12 +118,10 @@ your appDelegate (or appropriate class)
 	return output;
 }
 ...
-
 ```
 
 #### PHP
 
-
 ```javascript
-   echo md5('string to hash\\n')
+echo md5('string to hash\\n')
 ```

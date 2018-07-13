@@ -27,9 +27,8 @@ Add question.
 ### Throws
 
 | Code | Description |
-|----------------------|----------------------------|
-| Specific Code: 24197 | The request is empty                     |
 |----------------------|------------------------------------------|
+| Specific Code: 24197 | The request is empty                     |
 | Specific Code: 24198 | The event does not exist                 |
 | Specific Code: 24199 | The session does not exist               |
 | Specific Code: 24200 | The session question details are invalid |

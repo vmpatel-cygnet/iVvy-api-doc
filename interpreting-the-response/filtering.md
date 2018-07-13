@@ -1,6 +1,6 @@
 # Filtering
 
-Some requests \(mostly requests that return collections and/or take pagination requests\) may also accept a filter argument. The structure of this filter will be an object with the key’s being what needs to be filtered, and the value will be the content of the filter.
+Some requests \(mostly requests that return [collections ](collections.md)and/or take [pagination ](pagination.md)requests\) may also accept a filter argument. The structure of this filter will be an object with the key’s being what needs to be filtered, and the value will be the content of the filter.
 
 There are a number of options that may modify the filter behaviour. These are appended to the end of the key to filter. The accepted modifiers are:
 

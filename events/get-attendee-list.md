@@ -51,7 +51,7 @@ A collection object with the following properties in the results
 | name | The name of the custom field |
 | value | The value of the custom field for attendee |
 
-The result from this call will be a [collection](./#collections) of all the events the user has access to. This call also accepts the [pagination](./#pagination) and [filter](./#filtering) properties.
+The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties.
 
 ### Throws
 

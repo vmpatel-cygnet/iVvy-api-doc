@@ -6,19 +6,19 @@ Current exception codes and meanings are:
 
 | Code | Description |
 | --- | --- |
-| 400 |	Bad Request
-| 401 |	Unauthorized
-| 403 |	Forbidden
-| 404 |	Not Found
-| 405 |	Method Not Allowed
-| 406 |	Not Acceptable
-| 429 |	Too Many Requests
-| 460 |	Unknown
-| 461 |	Failed Request
-| 462 |	Session Expired
-| 463 |	Key Revoked
-| 500 |	Internal Server Error
-| 501 |	Not Implemented
+| 400 | Bad Request |
+| 401 | Unauthorized |
+| 403 | Forbidden |
+| 404 | Not Found |
+| 405 | Method Not Allowed |
+| 406 | Not Acceptable |
+| 429 | Too Many Requests |
+| 460 | Unknown |
+| 461 | Failed Request |
+| 462 | Session Expired |
+| 463 | Key Revoked |
+| 500 | Internal Server Error |
+| 501 | Not Implemented |
 
 Some exceptions will have an additional piece of information associated with the exception, which will contain more specific message about the exception.
 
@@ -60,3 +60,4 @@ Response:
   "specificCode":23017
 }
 ```
+

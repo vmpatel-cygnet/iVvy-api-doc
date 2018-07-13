@@ -113,7 +113,7 @@ MD5 funcationlity can be be included in IOS code by first adding the CommonCrypt
 ...
 ```
 
-### PHP
+## PHP
 
 ```javascript
 echo md5('string to hash\n')

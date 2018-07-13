@@ -1,6 +1,6 @@
 # Events
 
-### Namespace 
+## Namespace
 
 `marketplace`
 

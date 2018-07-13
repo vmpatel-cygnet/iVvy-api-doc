@@ -20,7 +20,7 @@ Get list of registration.
 
 | Property | Description | Type |
 | --- | --- | --- |
-| modifiedDate | Filter by modified date | [iVvy Timestamp Format](./#timestamp-format) |
+| modifiedDate | Filter by modified date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 
 ### Returns
 

@@ -25,8 +25,8 @@ Get list of event.
 
 | Property | Description | Type |
 | --- | --- | --- |
-| afterDate | Filter by start date | [iVvy Timestamp Format](./#timestamp-format) |
-| beforeDate | Filter by end date | [iVvy Timestamp Format](./#timestamp-format) |
+| afterDate | Filter by start date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
+| beforeDate | Filter by end date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | status | Filter by status Array of the following values | Must be an array |
 
 ### Returns
@@ -50,10 +50,11 @@ A collection object with the following properties in the results.
 | venue | Details of the venue of the event \(if the includeVenueDetails flag is set on the request\) |
 | tickets | The tickets of an event \(if the includeTicketDetails flag is set on the request\) |
 | information | Event website information \(if the includeInformationDetails flag is set on the request\) This is an array of objects with the following properties… |
+| homepageContent  | Content of the website home page \(if the includeHomepageContent flag is set on the request\). Note this is the contents of the HTML that is entered in as the home page content of the event. |
+| eventTags  | The tags of the event |
+| modifiedDate  | timestamp  |
 
-\| homepageContent \| Content of the website home page \(if the includeHomepageContent flag is set on the request\). Note this is the contents of the HTML that is entered in as the home page content of the event. \| \| eventTags \| The tags of the event \|
-
-\| modifiedDate \| timestamp \|
+The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties.
 
 #### Event types
 

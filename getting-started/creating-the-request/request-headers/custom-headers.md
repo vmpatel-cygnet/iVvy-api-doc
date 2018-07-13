@@ -12,7 +12,7 @@ This is the same format at the standard HTTP Authorization header. For iVvy requ
 
 `X-Api-Authorization: IWS key:signature`
 
-… where IWS is the authentication system used by iVvy, key is the key used to sign the request, and the signature is the HMAC-SHA1 signature of the request. See Signing the request for details on how to sign a request.
+… where IWS is the authentication system used by iVvy, key is the key used to sign the request, and the signature is the HMAC-SHA1 signature of the request. See [Signing the request](../signing-the-request.md) for details on how to sign a request.
 
-The iVvy API server will lookup the secret key associated with the key used in this header, then use the details in the request in association with the secret key, then reconstruct the HMAC-SHA1 hash. Only when the calculated hash, and the signature sent through this header match will the request be authenticated.
+The iVvy API server will lookup the secret key associated with the key used in this header, then use the details in the request in association with the secret key, then reconstruct the [HMAC-SHA1](../../../development-reference/hmac-sha1.md) hash. Only when the calculated hash, and the signature sent through this header match will the request be authenticated.
 

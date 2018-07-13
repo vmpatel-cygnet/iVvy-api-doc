@@ -44,5 +44,5 @@ IVVY-Date: 2012-04-03 22:23:24
 
 Note the entire string is set to lowercase before signing.
 
-Signing is achieved using the HMAC algorithm, using SHA1 encryption. See HMAC-SHA1 for further details
+Signing is achieved using the HMAC algorithm, using SHA1 encryption. See [HMAC-SHA1](../../development-reference/hmac-sha1.md) for further details
 

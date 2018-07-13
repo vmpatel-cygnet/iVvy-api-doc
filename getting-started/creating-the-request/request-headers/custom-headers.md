@@ -4,7 +4,7 @@ A number of custom headers can be used with the request to the API.
 
 ## IVVY-Date \(Optional\)
 
-If your HTTP client does not allow the date header to be accessed or set, you can optionally use this header to use for the date string. Note if this header is used, the ‘date’ part of the signed string will need to be empty. The format of the value of this header will be the iVvy Timestamp Format, NOT the string format of the standard Date header.
+If your HTTP client does not allow the date header to be accessed or set, you can optionally use this header to use for the date string. Note if this header is used, the ‘date’ part of the [signed string](../signing-the-request.md) will need to be empty. The format of the value of this header will be the[ iVvy Timestamp Format](../../../development-reference/timestamp-format.md), NOT the string format of the standard Date header.
 
 ## X-Api-Authorization \(Required\)
 

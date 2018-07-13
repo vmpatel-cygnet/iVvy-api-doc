@@ -30,5 +30,11 @@
 * [Contacts](contacts.md)
 * [Development Reference](development-reference/README.md)
   * [Calculating md5](development-reference/calculating-md5.md)
+  * [HMAC-SHA1](development-reference/hmac-sha1.md)
+  * [JSON Encoding](development-reference/json-encoding.md)
+  * [Timestamp Format](development-reference/timestamp-format.md)
+  * [Date Format](development-reference/date-format.md)
+  * [URLEncoding](development-reference/urlencoding.md)
+  * [Timezone List](development-reference/timezone-list.md)
 * [Changelog](changelog.md)
 

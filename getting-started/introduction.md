@@ -6,9 +6,9 @@ The API described in this document follows an RPC (Remote Procedure Call) paradi
 
 iVvy takes security very seriously and the API described in this document has been designed to be as secure as possible. 
 
-●	All transport has been secured by utilising industry standard TLS
-●	Key generation can be done first authenticating with the iVvy backend system
-●	All requests must be signed using the key/secret pair to prove the request was made by a valid key
-●	All requests have a time limit to avoid future replay attacks
+-	All transport has been secured by utilising industry standard TLS
+-	Key generation can be done first authenticating with the iVvy backend system
+-	All requests must be signed using the key/secret pair to prove the request was made by a valid key
+-	All requests have a time limit to avoid future replay attacks
 
 

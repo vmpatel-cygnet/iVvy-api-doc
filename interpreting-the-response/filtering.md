@@ -15,14 +15,14 @@ There are a number of options that may modify the filter behaviour. These are ap
 
 If you want to search for ‘Null’ values, you can use the special value ‘__ISNULL__’ for the filter value.
 
-Example: Filter all the results where the firstName = Bob
+**Example: Filter all the results where the firstName = Bob**
 
 `{"filter":{"firstName":"Bob"}}`
 
-Example: Filter all results where the firstName starts with ‘M’
+**Example: Filter all results where the firstName starts with ‘M’**
 
 `{"filter":{"firstName__BEGINS":"M"}}`
 
-Example: Filter all results where the birthDay has not been set
+**Example: Filter all results where the birthDay has not been set**
 
 `{"filter":{"firstName":"__ISNULL__"}}`

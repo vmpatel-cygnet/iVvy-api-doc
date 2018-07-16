@@ -37,21 +37,21 @@ A collection object with the following properties in the results.
 | --- | --- |
 | id | The unique event identifier |
 | code | The code for the event |
-| eventType | [The type of event.](get-event-list.md#types-of-event) |
+| eventType | [The type of event.](get-event-list.md#event-types) |
 | title | The title of the event |
 | domainName | The domain name of the event |
 | startDateTime | The start of the event, at UTC |
 | endDateTime | The end of the event, at UTC |
 | numRegistered | The number of registrations |
-| currentStatus | [The current status of the event](get-event-list.md#status-of-the-event) |
+| currentStatus | [The current status of the event](get-event-list.md#current-status-of-event) |
 | contactEmail | The contact email address on the event |
 | websiteUrl | The URL for the event website |
 | websiteTemplateBannerImageUrl | Banner that is displayed on the website |
-| venue | Details of the venue of the event \(if the includeVenueDetails flag is set on the request\) |
-| tickets | The tickets of an event \(if the includeTicketDetails flag is set on the request\) |
-| information | Event website information \(if the includeInformationDetails flag is set on the request\) This is an array of objects with the following properties… |
+| venue | [Details of the venue of the event \(if the includeVenueDetails flag is set on the request\)](get-event-list.md#venue-details) |
+| tickets | [The tickets of an event \(if the includeTicketDetails flag is set on the request\)](get-event-list.md#event-ticket-details) |
+| information | [Event website information \(if the includeInformationDetails flag is set on the request\) This is an array of objects with the information properties](get-event-list.md#event-website-information-details). |
 | homepageContent  | Content of the website home page \(if the includeHomepageContent flag is set on the request\). Note this is the contents of the HTML that is entered in as the home page content of the event. |
-| eventTags  | The tags of the event |
+| eventTags  | [The tags of the event.](get-event-list.md#event-tags) |
 | modifiedDate  | timestamp  |
 
 The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties.
@@ -103,7 +103,7 @@ The result from this call will be a collection of all the events the user has ac
 | description | Description of the ticket |
 | amount | Amount of the ticket |
 | isTaxFree | Amount of the ticket is tax free |
-| subscriptionGroups | Subscription groups assigned to the ticket This an array of objects with the following properties… |
+| subscriptionGroups | [Subscription groups assigned to the ticket This an array of objects with subscription group properties](get-event-list.md#subscription-group-details). |
 
 #### Subscription group details
 

@@ -13,9 +13,7 @@
 
 ## Keys
 
-| namespace |
-| action |
-| params |
+\| namespace \| \| action \| \| params \|
 
 ## Returns
 

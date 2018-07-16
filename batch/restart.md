@@ -2,8 +2,7 @@
 
 ## Description
 
-The restart action takes the asyncId as a parameter and returns the success of
-the call. Note a success of true does not mean the job will restart immediately.
+The restart action takes the asyncId as a parameter and returns the success of the call. Note a success of true does not mean the job will restart immediately.
 
 ## Api Url
 

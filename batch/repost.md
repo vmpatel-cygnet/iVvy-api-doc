@@ -2,15 +2,19 @@
 
 ## Description
 
-The repost action takes the asyncId as a parameter and returns the success of the call. Note a success of true does not mean the callback will be hit immediately.
+The repost action takes the asyncId as a parameter and returns the success of the call. 
+
+{% hint style="info" %}
+Note a success of true does not mean the callback will be hit immediately.
+{% endhint %}
 
 ## Api Url
 
 `[PlatformAddress]/api/1.0/batch?action=repost`
 
-`Example: Restart a batch job`
-
 ## Example Request
+
+`Example: Restart a batch job`
 
 ```javascript
 {
@@ -25,3 +29,4 @@ The repost action takes the asyncId as a parameter and returns the success of th
   "reposted":true
 }
 ```
+

@@ -7,23 +7,22 @@
 ## Parameters
 
 | Property | Description | Required | Type |
-|-------|-----------------------------------------------------|----------| ------ |
+| --- | --- | --- | --- |
 | async | The asyncId for the batch job to check progress for | Required | string |
 
 ## Returns
 
 | Property | Description |
-|---------|----------------------------------|
+| --- | --- |
 | progress | The progress of the batch job, as a percentage of work completed. |
 
 ## Throws
 
 | Code | Description |
-|----------------------|----------------------|
+| --- | --- |
 | Specific Code: 24105 | Could not find batch |
 
-The progress action takes the asyncId as a parameter and returns back the
-progress of the batch job as a percentage.
+The progress action takes the asyncId as a parameter and returns back the progress of the batch job as a percentage.
 
 ## Example Request
 

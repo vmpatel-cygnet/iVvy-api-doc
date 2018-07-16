@@ -58,11 +58,3 @@ Add or update event details.
 
 The event identifier must be provided as part of this call to fetch the specific event. E.g. {"id":1} can be used to fetch the details of an event with the identifier of 1.
 
-## Example Request
-
-TODO
-
-## Example Response
-
-TODO
-

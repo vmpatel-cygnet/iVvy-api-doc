@@ -2,7 +2,11 @@
 
 ## Description
 
-Create login token.
+Creates a login token that can be used to login to an event, on the behalf of a registered contact. This call takes an event identifier and a contact identifier and an optional referrer url to generate a single-use, time restricted token.
+
+The result will be the token and a URL that can be used to redirect the user to have them logged in to view their registration details without the use of a username and password.
+
+If the referrer is provided when creating the token, the browser’s referrer header will also be checked to ensure the request using the token has been redirected from the specific website saved against the token.
 
 ## Api Url
 
@@ -30,15 +34,9 @@ Create login token.
 | Specific Code: 24099 | Unable to generate token |
 | Specific Code: 24098 | Unable to find event |
 
-Creates a login token that can be used to login to an event, on the behalf of a registered contact. This call takes an event identifier and a contact identifier and an optional referrer url to generate a single-use, time restricted token.
-
-The result will be the token and a URL that can be used to redirect the user to have them logged in to view their registration details without the use of a username and password.
-
-If the referrer is provided when creating the token, the browser’s referrer header will also be checked to ensure the request using the token has been redirected from the specific website saved against the token.
+## Example Request
 
 `Example: Request a login token for a contact on an event`
-
-## Example Request
 
 ```javascript
 {

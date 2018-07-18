@@ -2,7 +2,7 @@
 
 ### Description
 
-Add or update company detail.
+Add or update lead detail.
 
 ### Api Url
 

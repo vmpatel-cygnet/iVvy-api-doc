@@ -33,7 +33,7 @@ Get the list of contact.
 | lastName     | The contact’s last name                                                                                           |
 | email        | The contact’s email address                                                                                       |
 | phone        | The contact’s phone number                                                                                        |
-| customFields | The custom field information for the contact. This is an array of fields, each an object with the following keys. |
+| customFields | The custom field information for the contact. This is an array of fields, each an object with the following [keys.](run.md#keys) |
 | groups       | The subscription group information for the contact.                                                               |
 | companies    | This will an array company ids to which the contact belongs.                                                      |
 | externalId   | This will be external id of the contact                                                                           |

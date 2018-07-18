@@ -1,7 +1,8 @@
 # Get Custom Field Definition
 
+### Returns
 
-### Returns (an array of objects with the following properties)
+`An array of objects with the following properties`
 
 | Property | Description |
 |--------------|----------------------------------------------------------------|

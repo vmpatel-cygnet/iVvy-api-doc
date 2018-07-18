@@ -12,60 +12,46 @@ Add or update contact details.
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
-| id           | The contact’s identifier. (Leave empty to add the contact to the system.) | | integer |
-| firstName    | The contact’s first name                                                  | Required (when the id parameter is missing) | string |
-| lastName     | The contact’s last name                                                   | Required (when the id parameter is missing) | string |
-| email        | The contact’s email address                                               | Must be a valid email. | string |
-| phone        | The contact’s phone number                                                | Must be a valid phone number. | string |
-| groups       | The array of subscription groups to set for the contact                   | Note this list will override any groups currently set for the contact  | string |
-| customFields | The array of custom fields to set on the contact                          | Each field will be validated depending on the type of field that is being set. |  |
-| companies    | The array of companies to set the contact.                                | Each values will be validated depending on the type of field as well as it will verify that the given company is exist or not. | |
-
+| id | The contact’s identifier. \(Leave empty to add the contact to the system.\) |  | integer |
+| firstName | The contact’s first name | Required \(when the id parameter is missing\) | string |
+| lastName | The contact’s last name | Required \(when the id parameter is missing\) | string |
+| email | The contact’s email address | Must be a valid email. | string |
+| phone | The contact’s phone number | Must be a valid phone number. | string |
+| groups | The array of subscription groups to set for the contact | Note this list will override any groups currently set for the contact | string |
+| customFields | The array of custom fields to set on the contact | Each field will be validated depending on the type of field that is being set. |  |
+| companies | The array of companies to set the contact. | Each values will be validated depending on the type of field as well as it will verify that the given company is exist or not. |  |
 
 ## Returns
 
 | Property | Description |
 | --- | --- |
 | success | If the contact was successfully added or updated |
-| id      | The unique identifier for the contact            |
-| message | Message of the failure (if success was false)    |
+| id | The unique identifier for the contact |
+| message | Message of the failure \(if success was false\) |
 
 This call takes values for a contact, and either
 
-1.  Updates the values for that contact (after you have provided an id in the
-    parameters), or
+1. Updates the values for that contact \(after you have provided an id in the parameters\), or
+2. Adds the contact to the system \(if the id parameter is missing\)
 
-2.  Adds the contact to the system (if the id parameter is missing)
-
-The result of this call will contain the status of the result (either true or
-false) and the contact identifier of the updated or newly created contact.
+The result of this call will contain the status of the result \(either true or false\) and the contact identifier of the updated or newly created contact.
 
 The properties of the contact currently supported are:
 
--   firstName
+* firstName
+* lastName
+* email
+* phone
+* groups
+  * This is an array of group objects with the ‘groupId’ key.
+* customFields
+  * This is an array of custom field objects with ‘fieldId’ and ‘value’ keys
+* Companies
+  * This is an array of companies Ids
 
--   lastName
+### `Adding a contact`
 
--   email
-
--   phone
-
--   groups
-
-    -   This is an array of group objects with the ‘groupId’ key.
-
--   customFields
-
-    -   This is an array of custom field objects with ‘fieldId’ and ‘value’ keys
-
--   Companies
-
-    -   This is an array of companies Ids
-    
-
-`Adding a contact`
-    
-### Example Request
+#### Example Request
 
 ```javascript
  {
@@ -86,11 +72,13 @@ The properties of the contact currently supported are:
 }
 ```
 
-`Updating a contact`
+### `Updating a contact`
 
-#### Example Request 
+#### Example Request
 
-NOTE: the groups will be set to only group 10, destroying the existing value
+{% hint style="info" %}
+Note :  the groups will be set to only group 10, destroying the existing value
+{% endhint %}
 
 ```javascript
 {
@@ -108,4 +96,5 @@ NOTE: the groups will be set to only group 10, destroying the existing value
 {
    "id":33884
 }
-```  
+```
+

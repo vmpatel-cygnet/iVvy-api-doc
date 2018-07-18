@@ -1,6 +1,6 @@
 # Add or Update Contact
 
-## Description
+### Description
 
 Add or update contact details.
 
@@ -8,7 +8,7 @@ Add or update contact details.
 
 `[PlatformAddress]/api/1.0/contact?action=addOrUpdateContact`
 
-## Parameters
+### Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
@@ -21,7 +21,7 @@ Add or update contact details.
 | customFields | The array of custom fields to set on the contact | Each field will be validated depending on the type of field that is being set. |  |
 | companies | The array of companies to set the contact. | Each values will be validated depending on the type of field as well as it will verify that the given company is exist or not. |  |
 
-## Returns
+### Returns
 
 | Property | Description |
 | --- | --- |
@@ -51,20 +51,31 @@ The properties of the contact currently supported are:
 
 ## `Adding a contact`
 
-## Example Request
+### Example Request
 
 ```javascript
- {
-  "firstName":"Bob",
-  "lastName":"Smith",
-  "email":"<bob@smith.com>",
-  "groups":[{"groupId":22},{"groupId":3}],
-  "customFields":[{"fieldId":33443,"value":"Yes"}],
-  "companies":[4,5]
- }
+{
+  "id": 33884,
+  "firstName": "Bobby",
+  "groups": [
+    {
+      "groupId": 10
+    }
+  ],
+  "customFields": [
+    {
+      "fieldId": 33443,
+      "value": "No"
+    }
+  ],
+  "companies": [
+    4,
+    5
+  ]
+}
 ```
 
-## Example Response
+### Example Response
 
 ```javascript
 {
@@ -72,9 +83,9 @@ The properties of the contact currently supported are:
 }
 ```
 
-## `Updating a contact`
+### `Updating a contact`
 
-## Example Request
+### Example Request
 
 {% hint style="info" %}
 Note :  the groups will be set to only group 10, destroying the existing value
@@ -90,7 +101,7 @@ Note :  the groups will be set to only group 10, destroying the existing value
 }
 ```
 
-## Example Response
+### Example Response
 
 ```javascript
 {

@@ -2,7 +2,7 @@
 
 ### Description
 
-Get comapny detail.
+Get company detail.
 
 ### Api Url
 

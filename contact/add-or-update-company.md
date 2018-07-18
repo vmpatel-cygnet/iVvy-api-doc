@@ -10,8 +10,8 @@ Add or update company detail.
 
 ### Parameters
 
-| Description | Required | Type |
-| --- | --- | --- |
+| Property | Description | Required | Type |
+| --- |--- | --- | --- |
 | id             | The company’s identifier. (Leave empty to add the company to the system.)                | Required               			|integer|
 | externalId     | Optionally a unique identifier of the company that is managed by an external application |                                   |	|
 | businessName   | The company's business name                                                              | Mandatory if adding a new company |	|
@@ -21,7 +21,7 @@ Add or update company detail.
 | fax            | The company's fax number                                                                 |                                   |	|
 | website        | The company's website                                                                    |                                   |	|
 | email          | The company's email address                                                              |                                   |	|
-| address        | The company’s address. This is an an object with the [keys](add-or-update-company.md#keys)                     |                                   |	|
+| address        | The company’s address. This is an an object with the [keys](add-or-update-company.md#keys)|             						|	|
 
 ### Keys
 

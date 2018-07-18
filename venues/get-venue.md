@@ -253,3 +253,136 @@ user has access. The unique venue identifier is required, for example {“id”:
   ]
 }
 ```
+
+The following are properties in the example json response above that have
+special values.
+
+## ratingAuthority
+
+One of the following values:
+
+-   1 = AAA rated
+
+-   2 = Self rated
+
+## facilities
+
+An array of the following values:
+
+-   1 = Air Conditioning
+
+-   2 = Airport Shuttle
+
+-   3 = Audio Visual
+
+-   4 = BBQ
+
+-   6 = Business Centre
+
+-   7 = Ceremony On Site
+
+-   8 = Child Minding
+
+-   9 = Disabled Access
+
+-   10 = Dry Cleaning
+
+-   11 = Express Checkout
+
+-   12 = Free Parking
+
+-   13 = Gaming Area
+
+-   14 = Gymnasium
+
+-   15 = Internet Access
+
+-   16 = Laundry
+
+-   39 = Liquor License
+
+-   17 = Mobile Bar
+
+-   18 = Open 24 Hours
+
+-   19 = Outdoor Area
+
+-   20 = Parking Available
+
+-   21 = Pay TV
+
+-   22 = Playground
+
+-   23 = Printing Services
+
+-   24 = Public Transport
+
+-   25 = Restaurant On Site
+
+-   26 = Sauna Steam Room
+
+-   27 = Smoking Permitted
+
+-   28 = Spa
+
+-   29 = Staging
+
+-   30 = Street Parking
+
+-   31 = Swimming Pool
+
+-   32 = Tour Desk
+
+-   33 = Undercover Parking
+
+-   34 = Valet Parking
+
+-   35 = Wheelchair Access
+
+-   36 = Wifi Access
+
+-   37 = Outside Catering Allowed
+
+-   38 = BYO Allowed
+
+## priceMethod (package pricing)
+
+One of the following values:
+
+-   1 = Per person
+
+-   2 = Flat rate
+
+## type (function space layout)
+
+One of the following values:
+
+-   0 = Custom
+
+-   1 = Theatre
+
+-   2 = Classroom
+
+-   3 = U-Shape
+
+-   4 = Cabaret
+
+-   5 = Boardroom
+
+-   6 = Banquet
+
+-   7 = Cocktail
+
+-   8 = Hollow Square
+
+## marketplaceEventTypes (packages, function spaces and image library files)
+
+An array of the following values:
+
+-   11 = Event
+
+-   21 = Wedding
+
+-   31 = Conference
+
+-   41 = Meeting

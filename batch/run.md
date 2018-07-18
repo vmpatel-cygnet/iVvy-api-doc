@@ -8,15 +8,15 @@
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
-| jobs | Array of api jobs to be run on the api. [Each job needs to have the keys.](run.md#keys) | Required | string |
+| jobs | Array of api jobs to be run on the api. Each job needs to have the [keys](run.md#keys). | Required | string |
 | callbackUrl | The URL to hit with a POST request after the batch has been run, with a JSON object of the responses | Required | string |
 
 ## Keys
 
 | **keys** |
 | --- |
-| namespace | 
-| action | 
+| namespace |
+| action |
 | params |
 
 ## Returns

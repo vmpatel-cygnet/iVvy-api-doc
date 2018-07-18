@@ -49,7 +49,7 @@ The properties of the contact currently supported are:
 * Companies
   * This is an array of companies Ids
 
-### `Adding a contact`
+#### `Adding a contact`
 
 ### Example Request
 
@@ -83,7 +83,7 @@ The properties of the contact currently supported are:
 }
 ```
 
-### `Updating a contact`
+#### `Updating a contact`
 
 ### Example Request
 

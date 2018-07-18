@@ -55,8 +55,9 @@ Get the contact details.
 
 ### Keys
 
+| Keys |
+| --- |
 | fieldId  |
-| --- | --- | --- |
 | displayName  |
 | value  |
 

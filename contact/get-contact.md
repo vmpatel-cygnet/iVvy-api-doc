@@ -15,18 +15,10 @@ Get the contact details.
 | id                | The contacts identifier                                                                               | Required | integer |
 | useEventSortOrder | If true, the eventInvitations and eventRegistrations will be returned ordered by the Event Start Date | Required | boolean |
 
-### Additional [Filter](../interpreting-the-response/filtering.md) Properties
-
-| Property | Description | Type |
-| --- | --- | --- |
-| fromModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
-| toModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
-
 ## Returns
 
 | Property | Description |
 | --- | --- |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | id                 | The unique identifier for the contact                                                                                                                                          |  
 | firstName          | The contact’s first name                                                                                                                                                       |  
 | lastName           | The contact’s last name                                                                                                                                                        |  
@@ -120,16 +112,18 @@ Get the contact details.
 
 # Invoice Details
 
-| id                 | The unique identifier for the invoice                                                                                                                                          |  
-| reference          | The reference number of the invoice                                                                                                                                            |  
-| title              | The title of the invoice                                                                                                                                                       |  
-| currentStatus      | The current status of the invoice. The value of this field will be one of the following…  |  
-| description        | The description of the invoice                                                                                                                                                 |  
-| currency           | The currency of the values of this invoice                                                                                                                                     |  
-| totalCost          | The total amount of the invoice                                                                                                                                                |  
-| totalPaid          | How much has been paid off the invoice                                                                                                                                         |  
-| invoiceUrl         | The URL for the invoice                                                                                                                                                        |  
-| invoiceUrlPdf      | The URL for the invoice pdf                                                                                                                                                    |  
+| Property | Description |
+| --- | --- |
+| id                 | The unique identifier for the invoice                                                    |  
+| reference          | The reference number of the invoice                                                      |  
+| title              | The title of the invoice                                                                 |  
+| currentStatus      | The current status of the invoice. The value of this field will be one of the following. |
+| description        | The description of the invoice                                                           |  
+| currency           | The currency of the values of this invoice                                               |  
+| totalCost          | The total amount of the invoice                                                          |  
+| totalPaid          | How much has been paid off the invoice                                                   |  
+| invoiceUrl         | The URL for the invoice                                                                  |  
+| invoiceUrlPdf      | The URL for the invoice pdf                                                              |  
 
 ## Invoice current status
 
@@ -142,16 +136,47 @@ Get the contact details.
 | 4 | Cancelled |
 | 5 | Refunded |
 
-## keys
-
-| **keys** |
-| --- |
-| fieldId |
-| displayName |
-| value |
-
 The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties.
 
+## Throws
 
+| Code | Description |
+| --- | --- |
+| Specific Code: 24096 | Unable to find contact |
 
+The contact identifier must be provided to fetch a specific contact from the
+system.
 
+## Example Request
+
+`Get a specific contact`
+
+```javascript
+{ 
+  "id":6
+}
+```
+
+## Example Response
+
+```javascript
+{
+    "id":"25146",
+    "firstName":"Test",
+    "lastName":"User",
+    "email":"user@test.com",
+    "phone":"0455550000",
+    "customFields":[
+        {"fieldId":"102","displayName":"Dietary Requirements","value":[""]},
+        {"fieldId":"103","displayName":"Shirt Size","value":["Medium"]}
+    ],
+    "groups":[
+        {"contactId":"25146","groupId":"2481","joinDate":"2012-04-16 21:07:04"},
+        {"contactId":"25146","groupId":"2485","joinDate":"2014-05-6 12:32:12"}
+    ],
+    "companies":[
+        4,5,6
+    ],
+    "externalId":"59fc43b6726be"
+}
+```

@@ -19,7 +19,6 @@ Get the list of contact.
 ### Additional [Filter](../interpreting-the-response/filtering.md) Properties
 
 | Property | Description | Type |
-| --- | --- | --- |
 |------------------|-------------------------|--------------------------------------------|
 | fromModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | toModifiedDate   | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
@@ -42,6 +41,7 @@ Get the list of contact.
 
 ## keys
 
+| --- | --- |
 | fieldId | 
 | displayName | 
 | value | 

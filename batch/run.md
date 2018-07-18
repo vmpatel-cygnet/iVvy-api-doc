@@ -13,7 +13,11 @@
 
 ## Keys
 
-\| namespace \| \| action \| \| params \|
+| **keys** |
+| --- |
+| namespace | 
+| action | 
+| params |
 
 ## Returns
 

@@ -1,57 +1,57 @@
 # Get Company
 
-### Description
+## Description
 
 Get company detail.
 
-### Api Url
+## Api Url
 
 `[PlatformAddress]/api/1.0/contact?action=getCompany`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
-| ---| --- | --- | --- |
+| --- | --- | --- | --- |
 | id | The company’s identifier | Required | integer |
 
-### Returns
+## Returns
 
 | Property | Description |
-|----------------|------------------------------------------------------------------------------------------|
-| id             | The unique identifier for the company                                                    |
-| externalId     | Optionally a unique identifier of the company that is managed by an external application |
-| businessName   | The company's business name                                                              |
-| tradingName    | The company's trading name                                                               |
-| businessNumber | The company's registration number                                                        |
-| phone          | The company's phone number                                                               |
-| fax            | The company's fax number                                                                 |
-| website        | The company's website                                                                    |
-| email          | The company's email address                                                              |
-| address        | The company’s address. This is an an object with the [keys](get-company.md#keys)         |
-| modifiedDate   | The modified date of the company                                                         |
+| --- | --- |
+| id | The unique identifier for the company |
+| externalId | Optionally a unique identifier of the company that is managed by an external application |
+| businessName | The company's business name |
+| tradingName | The company's trading name |
+| businessNumber | The company's registration number |
+| phone | The company's phone number |
+| fax | The company's fax number |
+| website | The company's website |
+| email | The company's email address |
+| address | The company’s address. This is an an object with the [keys](get-company.md#keys) |
+| modifiedDate | The modified date of the company |
 
-### Keys
+## Keys
 
 | keys |
-|------|
-| line1 |  
-| line2 | 
-| line3 | 
-| line4 | 
-| city | 
-| stateCode (e.g: QLD) | 
-| countryCode (e.g: AU) | 
-| postalCode | 
+| --- |
+| line1 |
+| line2 |
+| line3 |
+| line4 |
+| city |
+| stateCode \(e.g: QLD\) |
+| countryCode \(e.g: AU\) |
+| postalCode |
 
-### Throws
+## Throws
 
 | Code | Description |
-|----------|-------------|
+| --- | --- |
 | Specific Code: 24153 | Unable to find company |
 
 The company identifier must be provided to fetch a specific company from the system.
 
-### Example Request
+## Example Request
 
 `Get a specific company`
 
@@ -61,7 +61,7 @@ The company identifier must be provided to fetch a specific company from the sys
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {
@@ -85,3 +85,4 @@ The company identifier must be provided to fetch a specific company from the sys
   }
 }
 ```
+

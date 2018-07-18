@@ -2,11 +2,11 @@
 
 ### Description
 
-Add or update event details.
+Add contact details to subscription group.
 
 ### Api Url
 
-`[PlatformAddress]/api/1.0/batch?action=run`
+`[PlatformAddress]/api/1.0/contact?action=addContactsToSubscriptionGroup`
 
 ### Parameters
 

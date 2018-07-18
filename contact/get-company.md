@@ -43,5 +43,11 @@ Get comapny detail.
 | countryCode (e.g: AU) | 
 | postalCode | 
 
-The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties.
+### Throws
+
+| Code | Description |
+|----------|-------------|
+| Specific Code: 24153 | Unable to find company |
+
+The company identifier must be provided to fetch a specific company from the system.
 

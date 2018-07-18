@@ -24,7 +24,7 @@ An array of objects with the following properties
 | status    | If the contact was added to the group or not |
 
 ### `Adds a number of contacts to a subscription group.`
-
+---
 ### Example Request
 
  Add 4 contacts to subscription group 2481

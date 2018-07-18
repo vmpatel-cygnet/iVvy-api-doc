@@ -87,9 +87,7 @@ The properties of the contact currently supported are:
 
 ### Example Request
 
-{% hint style="info" %}
-Note :  the groups will be set to only group 10, destroying the existing value
-{% endhint %}
+`Note :  the groups will be set to only group 10, destroying the existing value`
 
 ```javascript
 {

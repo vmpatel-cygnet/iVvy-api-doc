@@ -1,5 +1,13 @@
 # Get Custom Field Definition
 
+## Description
+
+Get the details of custom field.
+
+## Api Url
+
+`[PlatformAddress]/api/1.0/contact?action=getCustomFieldDefinition`
+
 ### Returns
 
 `An array of objects with the following properties`

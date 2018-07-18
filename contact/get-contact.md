@@ -1,7 +1,5 @@
 # Get Contact
 
-## Get Contact
-
 ### Description
 
 Get the contact details.
@@ -125,7 +123,7 @@ Get the contact details.
 | id | The unique identifier for the invoice |
 | reference | The reference number of the invoice |
 | title | The title of the invoice |
-| currentStatus | The current status of the invoice. The value of this field will be one of the following. |
+| currentStatus | The current status of the invoice. The value of this field will be [one of the following current status](get-contact.md#invoice-current-status). |
 | description | The description of the invoice |
 | currency | The currency of the values of this invoice |
 | totalCost | The total amount of the invoice |

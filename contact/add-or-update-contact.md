@@ -4,7 +4,7 @@
 
 Add or update contact details.
 
-## Api Url
+### Api Url
 
 `[PlatformAddress]/api/1.0/contact?action=addOrUpdateContact`
 
@@ -49,7 +49,7 @@ The properties of the contact currently supported are:
 * Companies
   * This is an array of companies Ids
 
-## `Adding a contact`
+### `Adding a contact`
 
 ### Example Request
 

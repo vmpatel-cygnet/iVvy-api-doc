@@ -103,3 +103,29 @@ The properties of the company currently supported are:
   "id": 1618
 }
 ```
+
+#### `Updating a company`
+
+### Example Request
+
+```javascript
+{
+  "id": 1618,
+  "businessName": "Updated Company name",
+  "address": {
+    "line1": "address line 11",
+    "line2": "address line 22",
+    "stateCode": "QLD",
+    "postalCode": "4227",
+    "countryCode": "AU"
+  }
+}
+```
+
+### Example Response
+
+```javascript
+{
+  "id": 1618
+}
+```

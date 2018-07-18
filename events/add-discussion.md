@@ -31,12 +31,3 @@ Add discussion.
 | Specific Code: 24186 | Must provide a from id |
 | Specific Code: 24187 | The event does not exist |
 | Specific Code: 24188 | The session does not exist |
-
-## Example Request
-
-TODO
-
-## Example Response
-
-TODO
-

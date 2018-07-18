@@ -76,7 +76,7 @@ The properties of the company currently supported are:
 
     -   This is an object
 
-`Adding a company`
+### `Adding a company`
 
 ### Example Request
 

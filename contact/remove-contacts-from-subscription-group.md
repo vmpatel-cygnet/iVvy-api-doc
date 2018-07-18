@@ -24,5 +24,5 @@ An array of objects with the following properties
 | contactId | The contact this result is for |
 | status | If the contact was removed from the group or not |
 
-Removes a number of contacts from a subscription group. This call is very similar to the [addContactsToSubscriptionGroup](remove-contacts-from-subscription-group.md#_i6tohkfurnl8) call. It takes the same parameters and returns the same result.
+Removes a number of contacts from a subscription group. This call is very similar to the [addContactsToSubscriptionGroup](add-contacts-to-subscription-group.md) call. It takes the same parameters and returns the same result.
 

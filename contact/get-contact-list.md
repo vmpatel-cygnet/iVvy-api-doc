@@ -41,7 +41,7 @@ Get the list of contact.
 
 ## keys
 
-| --- | --- |
+| --- |
 | fieldId | 
 | displayName | 
 | value | 

@@ -1,6 +1,8 @@
 # Get Custom Field Definition
 
-## Returns \(an array of objects with the following properties\)
+### Returns
+
+An array of objects with the following properties
 
 | Property | Description |
 | --- | --- |
@@ -12,7 +14,7 @@
 | selectValues | Values that can be selected with select fields |
 | fileTypes | Types of files that can be uploaded with the file custom field |
 
-## Types of field
+### Types of field
 
 * 0 = Small Text
 * 1 = Large Text

@@ -102,7 +102,7 @@ Get the contact details.
 ### Registration Status
 
 | \# | Description |
-| --- | --- | --- | --- |
+| --- | --- |
 | 2 | Completed |
 | 3 | Cancelled |
 | 4 | Payment Required |

@@ -57,9 +57,9 @@ Get the contact details.
 
 | Keys |
 | --- |
-| fieldId  |
-| displayName  |
-| value  |
+| fieldId |
+| displayName |
+| value |
 
 ### Event Invitations
 

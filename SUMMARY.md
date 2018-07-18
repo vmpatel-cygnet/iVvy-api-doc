@@ -58,7 +58,6 @@
   * [Add Question](events/add-question.md)
 * [Venues](venues.md)
 * [Partners](partners.md)
-* [Contacts](contacts.md)
 * [Development Reference](development-reference/README.md)
   * [Calculating md5](development-reference/calculating-md5.md)
   * [HMAC-SHA1](development-reference/hmac-sha1.md)

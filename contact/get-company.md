@@ -51,3 +51,37 @@ Get comapny detail.
 
 The company identifier must be provided to fetch a specific company from the system.
 
+### Example Request
+
+`Get a specific company`
+
+```javascript
+{ 
+  "id":6
+}
+```
+
+### Example Response
+
+```javascript
+{
+  "id": "25146",
+  "businessName": "Test",
+  "tradingName": "Test Trading",
+  "businessNumber": "1234586",
+  "email": "company@test.com",
+  "phone": "0455550000",
+  "fax": "0455550125",
+  "website": "www.test.com",
+  "address": {
+    "line1": "Street Number",
+    "line2": "Street Name",
+    "line3": "",
+    "line4": "",
+    "city": "Gold Coast",
+    "stateCode": "QLD",
+    "countryCode": "AU",
+    "postalCode": "4227"
+  }
+}
+```

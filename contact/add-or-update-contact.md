@@ -49,9 +49,9 @@ The properties of the contact currently supported are:
 * Companies
   * This is an array of companies Ids
 
-### `Adding a contact`
+## `Adding a contact`
 
-#### Example Request
+## Example Request
 
 ```javascript
  {
@@ -64,7 +64,7 @@ The properties of the contact currently supported are:
  }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {
@@ -72,9 +72,9 @@ The properties of the contact currently supported are:
 }
 ```
 
-### `Updating a contact`
+## `Updating a contact`
 
-#### Example Request
+## Example Request
 
 {% hint style="info" %}
 Note :  the groups will be set to only group 10, destroying the existing value
@@ -90,7 +90,7 @@ Note :  the groups will be set to only group 10, destroying the existing value
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {

@@ -10,9 +10,9 @@ Get company detail.
 
 ### Parameters
 
-| Description | Required | Type |
-| --- | --- | --- |
-| The company’s identifier | Required | integer |
+| Property | Description | Required | Type |
+| ---| --- | --- | --- |
+| id | The company’s identifier | Required | integer |
 
 ### Returns
 

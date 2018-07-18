@@ -13,9 +13,8 @@
 
 ## Keys
 
-| **keys** |
-| --- |
 | namespace |
+| --- |
 | action |
 | params |
 

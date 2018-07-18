@@ -1,14 +1,14 @@
 # Add or Update Contact
 
-## Description
+### Description
 
 Add or update contact details.
 
-## Api Url
+### Api Url
 
 `[PlatformAddress]/api/1.0/contact?action=addOrUpdateContact`
 
-## Parameters
+### Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
@@ -17,11 +17,11 @@ Add or update contact details.
 | lastName | The contact’s last name | Required \(when the id parameter is missing\) | string |
 | email | The contact’s email address | Must be a valid email. | string |
 | phone | The contact’s phone number | Must be a valid phone number. | string |
-| groups | The array of subscription groups to set for the contact | Note this list will override any groups currently set for the contact | string |
+| groups | The array of subscription groups to set for the contact | Note : this list will override any groups currently set for the contact | string |
 | customFields | The array of custom fields to set on the contact | Each field will be validated depending on the type of field that is being set. |  |
 | companies | The array of companies to set the contact. | Each values will be validated depending on the type of field as well as it will verify that the given company is exist or not. |  |
 
-## Returns
+### Returns
 
 | Property | Description |
 | --- | --- |
@@ -49,9 +49,9 @@ The properties of the contact currently supported are:
 * Companies
   * This is an array of companies Ids
 
-### `Adding a contact`
+#### `Adding a contact`
 
-## Example Request
+### Example Request
 
 ```javascript
 {
@@ -75,7 +75,7 @@ The properties of the contact currently supported are:
 }
 ```
 
-## Example Response
+### Example Response
 
 ```javascript
 {
@@ -83,9 +83,9 @@ The properties of the contact currently supported are:
 }
 ```
 
-### `Updating a contact`
+#### `Updating a contact`
 
-## Example Request
+### Example Request
 
 `Note : the groups will be set to only group 10, destroying the existing value`
 
@@ -99,7 +99,7 @@ The properties of the contact currently supported are:
 }
 ```
 
-## Example Response
+### Example Response
 
 ```javascript
 {

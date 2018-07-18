@@ -35,7 +35,7 @@ Get list of companies.
 | fax            | The company's fax number                                                                 |
 | website        | The company's website                                                                    |
 | email          | The company's email address                                                              |
-| address        | The company’s address. This is an an object with the address [keys](get-contact.md#keys).|
+| address        | The company’s address. This is an an object with the address [keys](get-company-list.md#keys).|
 | modifiedDate   | The modified date of the company                                                         |
 
 ### Keys

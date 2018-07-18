@@ -12,8 +12,9 @@ Add contact details to subscription group.
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
-| contacts | The contact identifiers to subscribe to the group        | Required | This is an array of contact identifiers (each must be a valid integer) |
-| group    | The subscription group identifier to add the contacts to | Required | Must be a valid integer.                                               |
+| contacts | The contact identifiers to subscribe to the group        | Required | integer (This is an array of contact identifiers) |
+| group    | The subscription group identifier to add the contacts to | Required | integer                                           |
+
 ### Returns
 
 An array of objects with the following properties

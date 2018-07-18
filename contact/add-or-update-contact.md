@@ -12,7 +12,7 @@ Add or update contact details.
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
-| id           | The contact’s identifier. (Leave empty to add the contact to the system.) | | Must be an integer |
+| id           | The contact’s identifier. (Leave empty to add the contact to the system.) | | integer |
 | firstName    | The contact’s first name                                                  | Required (when the id parameter is missing) | string |
 | lastName     | The contact’s last name                                                   | Required (when the id parameter is missing) | string |
 | email        | The contact’s email address                                               | Must be a valid email. | string |
@@ -95,7 +95,7 @@ NOTE: the groups will be set to only group 10, destroying the existing value
 ```javascript
 {
   "id":33884,
-  firstName":"Bobby",
+  "firstName":"Bobby",
   "groups":[{"groupId":10}],
   "customFields":[{"fieldId":33443,"value":"No"}],
   "companies":[4,5]

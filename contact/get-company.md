@@ -6,7 +6,7 @@ Get comapny detail.
 
 ### Api Url
 
-`[PlatformAddress]/api/1.0/contact?action=getCompanyList`
+`[PlatformAddress]/api/1.0/contact?action=getCompany`
 
 ### Parameters
 

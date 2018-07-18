@@ -24,7 +24,7 @@ An array of objects with the following properties
 | contactId | The contact this result is for               |
 | status    | If the contact was added to the group or not |
 
-### `Adds a number of contacts to a subscription group.`
+#### `Adds a number of contacts to a subscription group.`
 
 ### Example Request
 

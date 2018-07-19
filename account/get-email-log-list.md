@@ -6,7 +6,7 @@ The result from this call will be a [collection](../interpreting-the-response/co
 
 ### Api Url
 
-`[PlatformAddress]/api/1.0/account?action=addContactsToSubscriptionGroup`
+`[PlatformAddress]/api/1.0/account?action=getEmailLogList`
 
 ### Returns
 

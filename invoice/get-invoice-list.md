@@ -64,6 +64,17 @@ A collection object with the following properties in the results
 | toAddress | The “to” Address of the invoice |
 | bookingCode | The unique reference code of the booking if refType is 4 \(Venue Booking\) |
 
+## Current status
+
+| \# | Description |
+| --- | --- |
+| 0 | Not Paid |
+| 1 | Un-confirmed Paid |
+| 2 | Paid |
+| 3 | Written Off |
+| 4 | Cancelled |
+| 5 | Refunded |
+
 ## Address Details
 
 | Property | Description |

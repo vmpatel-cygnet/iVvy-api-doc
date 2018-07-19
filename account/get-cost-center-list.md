@@ -11,17 +11,17 @@ Fetches the list of cost centers in the account. No request params required.
 ### Returns
 
 | Property | Description |
-| -------- | ----------- |
-| id          | The unique identifier of the cost center    |
-| name        | The name of the cost center                 |
-| code        | The code of the cost center                 |
+| --- | --- |
+| id | The unique identifier of the cost center |
+| name | The name of the cost center |
+| code | The code of the cost center |
 | description | The complete description of the cost center |
-| defaultType | Set if one of the default cost centers      |
+| defaultType | Set if one of the default cost centers |
 
 ### Throws
 
 | Code | Description |
-| ---- | ----------- |
+| --- | --- |
 | Specific Code: 24150 | Account does not exist |
 
 ## Example Response
@@ -54,3 +54,4 @@ Fetches the list of cost centers in the account. No request params required.
   ]
 }
 ```
+

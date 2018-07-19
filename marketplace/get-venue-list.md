@@ -2,42 +2,23 @@
 
 ### Description
 
-This api call allows you to search the iVvy marketplace for venues that match
-the following criteria:
+This api call allows you to search the iVvy marketplace for venues that match the following criteria:
 
--   countryCode (required): The 2 letter country code (ISO_3166-1) of the venue
+* countryCode \(required\): The 2 letter country code \(ISO\_3166-1\) of the venue
+* city \(optional\): The location city of the venue. Currently one of the following values:
+  * brisbane-qld
+  * sydney-nsw
+* eventTypes \(optional\): One or more of the following event types for which the venue can provide:
+  * 11 = Event
+  * 21 = Wedding
+  * 31 = Conference
+  * 41 = Meeting
+* availabilityStartDate \(optional\): The start date of the period from which to include the function space availability details of the venues. The value must be a string with the format YYYY-MM-DD, for example: 2015-05-20
+* availabilityEndDate \(optional\): The end date of the period from which to include the function space availability details of the venues. The value must be a string with the format YYYY-MM-DD, for example: 2015-05-25
 
--   city (optional): The location city of the venue. Currently one of the
-    following values:
+This call also accepts the pagination parameters. By default, only the first 10 venues will be returned.
 
-    -   brisbane-qld
-
-    -   sydney-nsw
-
--   eventTypes (optional): One or more of the following event types for which
-    the venue can provide:
-
-    -   11 = Event
-
-    -   21 = Wedding
-
-    -   31 = Conference
-
-    -   41 = Meeting
-
--   availabilityStartDate (optional): The start date of the period from which to
-    include the function space availability details of the venues. The value
-    must be a string with the format YYYY-MM-DD, for example: 2015-05-20
-
--   availabilityEndDate (optional): The end date of the period from which to
-    include the function space availability details of the venues. The value
-    must be a string with the format YYYY-MM-DD, for example: 2015-05-25
-
-This call also accepts the pagination parameters. By default, only the first 10
-venues will be returned.
-
-`Example: Find all the venues in Brisbane that can provide weddings. Include
-their availability from 1st July 2015 to 7th July 2015`
+`Example: Find all the venues in Brisbane that can provide weddings. Include their availability from 1st July 2015 to 7th July 2015`
 
 ### Api Url
 
@@ -125,3 +106,4 @@ their availability from 1st July 2015 to 7th July 2015`
   }
 }
 ```
+

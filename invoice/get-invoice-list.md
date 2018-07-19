@@ -22,7 +22,7 @@ Get list of invoices.
 | fromModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | toModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | venueId | Filter invoices that belong to a specific Venue | integer |
-| refType | Filter by a specific reference type. The reference type of the invoice | integer |
+| refType | Filter by a specific [reference type](get-invoice-list.md#reference-type). The reference type of the invoice | integer |
 
 ## Reference type
 
@@ -61,19 +61,8 @@ A collection object with the following properties in the results
 | eventId | Event Identifier to which invoice is belongs to |
 | venueId | Venue Identifier to which invoice is belongs to |
 | toContactId | Contact Id against which invoice is created |
-| toAddress | The “to” Address of the invoice |
+| toAddress | [The “to” Address of the invoice](get-invoice-list.md#address-details) |
 | bookingCode | The unique reference code of the booking if refType is 4 \(Venue Booking\) |
-
-## Current status
-
-| \# | Description |
-| --- | --- |
-| 0 | Not Paid |
-| 1 | Un-confirmed Paid |
-| 2 | Paid |
-| 3 | Written Off |
-| 4 | Cancelled |
-| 5 | Refunded |
 
 ## Address Details
 

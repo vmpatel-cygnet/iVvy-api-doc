@@ -87,7 +87,7 @@ One of the following values:
 | modifiedDateBefore | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | modifiedDateAfter | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 
-## Additional Filter Properties
+## Additional [Filter](../interpreting-the-response/filtering.md) Properties
 
 | Property | Description | Type |
 | --- | --- | --- |

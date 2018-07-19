@@ -1,8 +1,8 @@
-# Venue
+# Invoice
 
 ### Namespace
 
 ```text
-venue
+invoice
 ```
 

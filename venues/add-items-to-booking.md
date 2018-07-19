@@ -17,7 +17,7 @@ You can add one or more items to a booking with this API. The venueId and Bookin
 | items     | Array of multiple items with additional item details.                    |          | There must be at least one additional item. |
 
 
-### Parameters
+### Additional item details
 
 | Property | Description | Type |
 | --- | --- | --- |

@@ -18,13 +18,13 @@ We can add the payment details of a booking using this API. The venueId, Booking
 
 ## Payment Details
 
-| Property | Description | Required | Type |
+| Property | Description | Type |
 | --- | --- | --- | --- |
-| paidDate |  | The date & time of the payment | Timestamp in UTC |
-| amountPaid | The payment amount | Must be a valid number |  |
-| paymentMethod | The payment method |  |  |
-| receiptNum | A receipt number of the payment transaction | string |  |
-| notes | Additional notes about the payment | string |  |
+| paidDate | The date & time of the payment | Timestamp in UTC |
+| amountPaid | The payment amount | number |
+| paymentMethod | [The payment method](add-payment-to-booking.md#payment-methods) |  |
+| receiptNum | A receipt number of the payment transaction | string |
+| notes | Additional notes about the payment | string |
 
 ## Payment methods
 

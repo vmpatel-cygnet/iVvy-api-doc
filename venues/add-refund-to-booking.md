@@ -14,7 +14,7 @@ We can add a refund to a booking using this API. The venueId, Booking Id and ref
 | --- | --- | --- | --- |
 | venueId | The unique id of the venue to which the booking belongs | Required | integer |
 | bookingId | The unique id of the booking to which the refund will be added | Required | integer |
-| refund | The paymentdetails to add to the booking |  |  |
+| refund | [The payment details to add to the booking](add-refund-to-booking.md#payment-details) |  |  |
 
 ## Payment Details
 

@@ -14,7 +14,7 @@ You can add one or more items to a booking with this API. The venueId and Bookin
 | --- | --- | --- | --- |
 | venueId | The unique id of the venue to which the booking belongs | Required | integer |
 | bookingId | The unique id of the booking to which the additional items will be added | Required | integer |
-| items | Array of multiple items with additional item details. |  | There must be at least one additional item. |
+| items | [Array of multiple items with additional item details.](add-items-to-booking.md#additional-item-details) |  | There must be at least one additional item. |
 
 ## Additional item details
 

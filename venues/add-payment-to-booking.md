@@ -28,8 +28,8 @@ We can add the payment details of a booking using this API. The venueId, Booking
 
 ### Payment methods
 
-| Code | Description |
-| ---- | ----------- |
+| # | Description |
+| - | ----------- |
 | 0  |Unknown|
 | 1  |Credit Card|
 | 2  |BPay|
@@ -85,6 +85,3 @@ We can add the payment details of a booking using this API. The venueId, Booking
   "paymentId": 758
 }
 ```
-
-
-

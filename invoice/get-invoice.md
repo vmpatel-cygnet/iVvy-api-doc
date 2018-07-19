@@ -2,7 +2,7 @@
 
 ### Description
 
-Get list of invoices.
+Get invoice details.
 
 ### Api Url
 

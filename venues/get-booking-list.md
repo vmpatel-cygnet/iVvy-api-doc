@@ -1,14 +1,14 @@
 # Get Booking List
 
-### Description
+## Description
 
 The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties.
 
-### Api Url
+## Api Url
 
 `[PlatformAddress]/api/1.0/venue?action=getBookingList`
 
-### Example Request
+## Example Request
 
 `Get a specific venue’s Booking List`
 
@@ -19,7 +19,7 @@ The result from this call will be a [collection](../interpreting-the-response/co
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {
@@ -69,34 +69,28 @@ The result from this call will be a [collection](../interpreting-the-response/co
 }
 ```
 
-
-### currentStatus:
+## currentStatus:
 
 One of the following values:
 
--   1 = Prospective
+* 1 = Prospective
+* 2 = Tentative
+* 3 = Confirmed
+* 4 = Cancelled
+* 5 = Ordering
+* 8 = Not Accepted
 
--   2 = Tentative
-
--   3 = Confirmed
-
--   4 = Cancelled
-
--   5 = Ordering
-
--   8 = Not Accepted
-
-### Additional Parameters
+## Additional Parameters
 
 | Property | Description | Type |
-|--------------------|-------------------------|--------------------------------------------|
+| --- | --- | --- |
 | modifiedDateBefore | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
-| modifiedDateAfter  | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
+| modifiedDateAfter | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 
-### Additional Filter Properties
+## Additional Filter Properties
 
 | Property | Description | Type |
-|-----------|--------------------------------|---------|
+| --- | --- | --- |
 | companyId | Filter by unique id of company | integer |
 | contactId | Filter by unique id of contact | integer |
 

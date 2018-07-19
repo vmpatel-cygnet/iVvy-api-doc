@@ -14,15 +14,15 @@ We can add a refund to a booking using this API. The venueId, Booking Id and ref
 | -------- | ----------- | -------- | ---- |
 | venueId   | The unique id of the venue to which the booking belongs        | Required	| integer | 
 | bookingId | The unique id of the booking to which the refund will be added | Required	| integer |
-| refund    | The paymentdetails to add to the booking                       |          | |
+| refund    | The paymentdetails to add to the booking                       |          |         |
 
 ### Payment Details
 
 | Property | Description | Required | Type |
 | -------- | ----------- | -------- | ---- |
-| refundDate| The date & time of the refund   	| Timestamp in UTC  	  |
-| amount    | The refund amount                 | Must be a valid number|
-| notes     | Additional notes about the refund | string                | 
+| refundDate| The date & time of the refund   	| timestamp in UTC |
+| amount    | The refund amount                 | number |
+| notes     | Additional notes about the refund | string | 
 
 ### Returns
 
@@ -31,10 +31,12 @@ We can add a refund to a booking using this API. The venueId, Booking Id and ref
 | success       | Whether or not the refund was added to the booking |
 | refundDetails | A collection of invoiceId and refundId values      |
 
+### Refund Details
+
 | Property | Description |
 | ---------| ----------- |
-| invoiceId     | The unique id of the invoice |
-| refundId      | The id of the invoice refund |
+| invoiceId | The unique id of the invoice |
+| refundId  | The id of the invoice refund |
 
 ### Throws
 

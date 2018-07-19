@@ -26,6 +26,24 @@ We can add the payment details of a booking using this API. The venueId, Booking
 | receiptNum    | A receipt number of the payment transaction | string					                | 	                |
 | notes         | Additional notes about the payment          | string					                | 	                |
 
+### Payment methods
+
+| Code | Description |
+| ---- | ----------- |
+| 0  |Unknown|
+| 1  |Credit Card|
+| 2  |BPay|
+| 3  |Direct Deposit|
+| 4  |PayPal|
+| 5  |Cheque|
+| 6  |Cash|
+| 7  |Custom Gateway|
+| 8  |Accounts Receivable|
+| 9  |EFTPOS|
+| 10 |WriteOff|
+| 11 |Point of Sale|
+| 12 |Wire Transfer|
+
 ### Returns
 
 | Property | Description |

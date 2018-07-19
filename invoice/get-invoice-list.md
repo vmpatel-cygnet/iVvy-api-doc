@@ -15,25 +15,6 @@ Get list of invoices.
 | perPage | The number of invoices to get in a single api call                                                                | Required | integer |
 | start   | The starting result of the page. Note this is zero based (i.e. sending start=0 will start from the first result.) | Required | integer |
 
-### Additional [Filter ](../interpreting-the-response/filtering.md)Properties
-
-| Property | Description | Type |
-| --- | --- | --- |
-| fromModifiedDate | Filter by Modified Date                         | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
-| toModifiedDate   | Filter by Modified Date                         | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
-| venueId          | Filter invoices that belong to a specific Venue | integer |
-| refType          | Filter by a specific reference type. The reference type of the invoice | integer |
-
-### Reference type
-
-| # | Description |
-| - | --- |
-| 0 | Custom |
-| 1 | Event Registration |
-| 2 | Membership Sign Up |
-| 3 | Membership Renewal |
-| 4 | Venue Booking |
-
 ### Returns
 
 A collection object with the following properties in the results
@@ -63,6 +44,30 @@ A collection object with the following properties in the results
 | toContactId    | Contact Id against which invoice is created                              |
 | toAddress      | The “to” Address of the invoice                                          |
 | bookingCode    | The unique reference code of the booking if refType is 4 (Venue Booking) |
+| items          | List of invoice items Item Details                                       |
+| payments       | List of payments of the invoice Payment Details                          |
+
+### Current status
+
+| # | Description |
+| - | --- |
+| 0 | Not Paid
+| 1 | Un-confirmed Paid
+| 2 | Paid
+| 3 | Written Off
+| 4 | Cancelled
+| 5 | Refunded
+
+### Reference type
+
+| # | Description |
+| - | --- |
+| 0 | Custom |
+| 1 | Event Registration |
+| 2 | Membership Sign Up |
+| 3 | Membership Renewal |
+| 4 | Venue Booking |
+
 
 ### Address Details
 
@@ -79,5 +84,41 @@ A collection object with the following properties in the results
 | countryName    | The country name of the address (e.g. Australia)                         |
 | postalCode     | The postal code of the address                                           |
 
-The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties.
+### Item Details
+
+| Property | Description |
+| -------- | ----------- |
+| description    | The description of the item                      |
+| quantity       | Quantity of the item                             |
+| unitCost       | The unit cost of the item                        |
+| totalCost      | The total cost of the item                       |
+| totalTaxCost   | The tax of the item                              |
+| amountPaid     | The amount paid of the item'                     |
+| refType        | The reference type of the item                   |
+
+
+### Payment Details
+
+| Property | Description |
+| -------- | ----------- |
+| paymentId      | The identifier of the payment                    |
+| receiptNum     | The receipt number of the payment                |
+| amountPaid     | The amount paid of the payment                   |
+| notes          | The notes of the payment                         |
+| chequeNumber   | The chequeNumber of the payment                  |
+| paymentMethod  | The payment method of the payment                |
+| paidDate       | The paid timestamp of the payment                |
+| feePercentage  | The percentage fee included in amountPaid        |
+| feeAmount      | The fee amount included in amountPaid            |
+
+`Note about fee: 
+If the payment is applied to multiple invoices, the fee amount is applied to the first invoice only.`
+
+### Throws
+
+| Code | Description |
+| ---- | ----------- |
+| Specific Code: 24137 | Unable to find invoice |
+
+The invoice identifier must be provided as part of this call to fetch the specific invoice. E.g. {"id":1} can be used to fetch the details of an invoice with the identifier of 1.
 

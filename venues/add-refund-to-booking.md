@@ -18,8 +18,8 @@ We can add a refund to a booking using this API. The venueId, Booking Id and ref
 
 ### Payment Details
 
-| Property | Description | Required | Type |
-| -------- | ----------- | -------- | ---- |
+| Property | Description | Required |
+| -------- | ----------- | -------- |
 | refundDate| The date & time of the refund   	| timestamp in UTC |
 | amount    | The refund amount                 | number |
 | notes     | Additional notes about the refund | string | 

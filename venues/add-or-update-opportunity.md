@@ -50,14 +50,13 @@ Add or update opportunity.
 This call takes values for a opportunity, and either
 
 1. Updates the values for that opportunity \(after you have provided an id in the parameters\), or
-2. Adds the opportunity to the system \(if the id parameter is missing\)
-   1. The result of this call will contain the status of the result \(either
+2. Adds the opportunity to the system \(if the id parameter is missing\) 1. The result of this call will contain the status of the result \(either
 
-      true or false\) and the opportunity identifier of the updated or newly
+   true or false\) and the opportunity identifier of the updated or newly
 
-      created opportunity.
+   created opportunity.
 
-`Add opportunity`
+### `Add opportunity`
 
 ### Example Request
 
@@ -84,7 +83,7 @@ This call takes values for a opportunity, and either
 }
 ```
 
-`Update opportunity`
+### `Update opportunity`
 
 ### Example Request
 
@@ -104,3 +103,4 @@ This call takes values for a opportunity, and either
   "id": 755
 }
 ```
+

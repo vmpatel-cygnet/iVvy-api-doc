@@ -1,10 +1,10 @@
 # Get Sponsorship List
 
-## Description
+### Description
 
 Get sponsorship list.
 
-## Api Url
+### API URL
 
 `[PlatformAddress]/api/1.0/event?action=getSponsorshipList`
 

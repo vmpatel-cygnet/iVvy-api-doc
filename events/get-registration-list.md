@@ -1,6 +1,6 @@
 # Get Registration List
 
-## Description
+### Description
 
 Get list of registration.
 
@@ -49,12 +49,4 @@ The result from this call will be a [collection](./#collections) of all the even
 | Code | Description |
 | --- | --- |
 | Specific Code: 24206 | Unable to find event |
-
-### Example Request
-
-TODO
-
-### Example Response
-
-TODO
 

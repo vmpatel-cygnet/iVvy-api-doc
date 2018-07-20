@@ -1,10 +1,10 @@
 # Get Event List
 
-## Description
+### Description
 
 Get list of event.
 
-## API URL
+### API URL
 
 `[PlatformAddress]/api/1.0/event?action=getEventList`
 

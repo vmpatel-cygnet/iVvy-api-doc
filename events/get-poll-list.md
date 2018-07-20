@@ -1,14 +1,14 @@
 # Get Poll List
 
-## Description
+### Description
 
 Get poll list.
 
-## Api Url
+### API URL
 
 `[PlatformAddress]/api/1.0/event?action=getPollList`
 
-## Parameters
+### Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
@@ -16,7 +16,7 @@ Get poll list.
 | start | The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\) | Required | integer \(0 or greater\) |
 | eventId | The unique id of the event to which the poll belongs | Required | integer |
 
-## Returns
+### Returns
 
 A collection object with the following properties in the results
 
@@ -26,7 +26,7 @@ A collection object with the following properties in the results
 | question | The name of the question |
 | sessions | An array of objects with the session properties |
 
-## Session properties
+### Session properties
 
 | Property | Description |
 | --- | --- |
@@ -35,17 +35,9 @@ A collection object with the following properties in the results
 
 The result from this call will be a collection of all the event polls the user has access to. This call also accepts the pagination and filter properties.
 
-## Throws
+### Throws
 
 | Code | Description |
 | --- | --- |
 | Specific Code: 24172 | The event does not exist |
-
-## Example Request
-
-TODO
-
-## Example Response
-
-TODO
 

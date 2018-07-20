@@ -1,14 +1,14 @@
 # Add Discussion
 
-## Description
+### Description
 
 Add discussion.
 
-## Api Url
+### API URL
 
 `[PlatformAddress]/api/1.0/event?action=addDiscussion`
 
-## Parameters
+### Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
@@ -17,14 +17,14 @@ Add discussion.
 | attendeeId | The unique id of attendee who gives a comment | Required | integer |
 | comment | The comment which will be added to discussion | Required | integer |
 
-## Returns
+### Returns
 
 | Property | Description |
 | --- | --- |
 | success | Whether or not the comment added to session discussion or not |
 | id | The unique id of the discussion |
 
-## Throws
+### Throws
 
 | Code | Description |
 | --- | --- |

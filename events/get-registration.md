@@ -1,10 +1,10 @@
 # Get Registration
 
-## Description
+### Description
 
 Get registration details.
 
-## API URL
+### API URL
 
 `[PlatformAddress]/api/1.0/event?action=getRegistration`
 
@@ -35,12 +35,4 @@ Get registration details.
 | Specific Code: 24207 | Unable to find event |
 | Specific Code: 24208 | Invalid Registration Id |
 | Specific Code: 24209 | Registration not found |
-
-### Example Request
-
-TODO
-
-### Example Response
-
-TODO
 

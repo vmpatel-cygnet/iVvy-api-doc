@@ -4,11 +4,11 @@
 
 Get list of event.
 
-### Api Url
+### API URL
 
 `[PlatformAddress]/api/1.0/event?action=getAttendeeList`
 
-## Parameters
+### Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
@@ -58,12 +58,4 @@ The result from this call will be a [collection](../interpreting-the-response/co
 | Code | Description |
 | --- | --- |
 | Specific Code: 24210 | Unable to find event |
-
-### Example Request
-
-TODO
-
-### Example Response
-
-TODO
 

@@ -118,6 +118,16 @@ A collection object with the following properties in the results
 
 The invoice identifier must be provided as part of this call to fetch the specific invoice. E.g. {"id":1} can be used to fetch the details of an invoice with the identifier of 1.
 
+### Example Request
+
+`Get a specific invoice`
+
+```javascript
+{ 
+  "id":15
+}
+```
+
 ### Example Response
 
 ```javascript

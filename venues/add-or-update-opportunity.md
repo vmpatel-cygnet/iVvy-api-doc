@@ -1,14 +1,14 @@
 # Add or Update Opportunity
 
-## Description
+### Description
 
 Add or update opportunity.
 
-## Api Url
+### API URL
 
 `[PlatformAddress]/api/1.0/venue?action=addOrUpdateOpportunity`
 
-## Parameters
+### Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
@@ -32,14 +32,14 @@ Add or update opportunity.
 | channel | The channel of opportunity |  | integer |
 | description | The description for the opportunity |  |  |
 
-## Returns
+### Returns
 
 | Property | Description |
 | --- | --- |
 | success | Whether or not the opportunity was added to the venue |
 | id | The unique id of the opportunity |
 
-## Throws
+### Throws
 
 | Code | Description |
 | --- | --- |

@@ -4,7 +4,7 @@
 
 Add question.
 
-### Api Url
+### API URL
 
 `[PlatformAddress]/api/1.0/event?action=addQuestion`
 

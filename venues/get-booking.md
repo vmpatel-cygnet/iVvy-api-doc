@@ -4,11 +4,11 @@
 
 The result from this call will be the details of a specific booking to which the user has access. The unique venue identifier is required, for example {“id”:123}
 
-### Api Url
+### API URL
 
 `[PlatformAddress]/api/1.0/venue?action=getBooking`
 
-## Example Request
+### Example Request
 
 `Get a specific Booking`
 
@@ -18,7 +18,7 @@ The result from this call will be the details of a specific booking to which the
 }
 ```
 
-## Example Response
+### Example Response
 
 ```javascript
 {

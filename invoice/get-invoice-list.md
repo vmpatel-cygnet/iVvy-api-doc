@@ -92,3 +92,89 @@ A collection object with the following properties in the results
 
 The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties.
 
+### Example Response
+
+```javascript
+{
+  "meta": {
+    "totalResults": 29016,
+    "start": 0,
+    "perPage": 2,
+    "count": 2
+  },
+  "results": [
+    {
+      "id": 15,
+      "reference": 100000157,
+      "title": "test",
+      "description": null,
+      "currency": "AUD",
+      "totalCost": 150,
+      "totalTaxCost": 13.636363636364,
+      "amountPaid": 150,
+      "toContactEmail": "wd42nc6d@h2k5lftg.com",
+      "toContactName": "wd42nc6d h2k5lftg",
+      "currentStatus": 2,
+      "createdDate": "2010-06-07 12:21:40 UTC",
+      "modifiedDate": "2015-07-18 01:32:39 UTC",
+      "refType": 1,
+      "refId": 107,
+      "taxRateUsed": 10,
+      "isTaxCharged": 1,
+      "paymentDueDate": "",
+      "eventId": 56,
+      "venueId": null,
+      "toContactId": 25148,
+      "toAddress": {
+        "line1": "66949VGT",
+        "line2": "9J08OO8E",
+        "line3": "3JVPX2E",
+        "line4": "8G6MLU9M",
+        "city": "2G6NP196",
+        "stateCode": "QLD",
+        "stateName": null,
+        "countryCode": "AU",
+        "countryName": null,
+        "postalCode": "5SA19NAQ"
+      },
+      "bookingCode": null
+    },
+    {
+      "id": 64,
+      "reference": 100000645,
+      "title": null,
+      "description": null,
+      "currency": "AUD",
+      "totalCost": 200,
+      "totalTaxCost": 18.181818181818,
+      "amountPaid": 200,
+      "toContactEmail": "wd42nc6d@h2k5lftg.com",
+      "toContactName": "wd42nc6d h2k5lftg",
+      "currentStatus": 2,
+      "createdDate": "2010-06-27 22:56:23 UTC",
+      "modifiedDate": "2015-05-19 02:15:04 UTC",
+      "refType": 1,
+      "refId": 168,
+      "taxRateUsed": 10,
+      "isTaxCharged": 1,
+      "paymentDueDate": "",
+      "eventId": 59,
+      "venueId": null,
+      "toContactId": 25148,
+      "toAddress": {
+        "line1": "1NVLK5BI",
+        "line2": "A07E92TC",
+        "line3": "33JKPTGA",
+        "line4": "BNF1DO08",
+        "city": "546O5YBN",
+        "stateCode": "QLD",
+        "stateName": null,
+        "countryCode": "AU",
+        "countryName": null,
+        "postalCode": "S90I9GG"
+      },
+      "bookingCode": null
+    }
+  ]
+}
+```

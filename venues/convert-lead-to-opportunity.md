@@ -4,7 +4,7 @@
 
 Convert lead to opportunity.
 
-### Api Url
+### API URL
 
 `[PlatformAddress]/api/1.0/venue?action=convertLeadToOpportunity`
 

@@ -24,7 +24,7 @@ Fetches the list of cost centers in the account. No request params required.
 | --- | --- |
 | Specific Code: 24150 | Account does not exist |
 
-## Example Response
+### Example Response
 
 `Example: get cost center list of the account`
 

@@ -18,7 +18,7 @@ This call also accepts the availabilityStartDate and availabilityEndDate paramet
 | --- | --- | --- | --- |
 
 
-## Example Request
+### Example Request
 
 ```javascript
 {
@@ -28,7 +28,7 @@ This call also accepts the availabilityStartDate and availabilityEndDate paramet
 }
 ```
 
-## Example Response
+### Example Response
 
 ```javascript
 {

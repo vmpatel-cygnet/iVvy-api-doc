@@ -33,7 +33,7 @@ The result from this call will be a [collection](../interpreting-the-response/co
 | --- | --- |
 | Specific Code: 24151 | Account does not exist |
 
-## Example Response
+### Example Response
 
 `Example: Get a specific account’s Email Logs List`
 

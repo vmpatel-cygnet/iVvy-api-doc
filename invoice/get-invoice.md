@@ -1,20 +1,20 @@
 # Get Invoice
 
-## Description
+### Description
 
 Get invoice details.
 
-## Api Url
+### Api Url
 
 `[PlatformAddress]/api/1.0/invoice?action=getInvoice`
 
-## Parameters
+### Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
 | id | The invoice identifier | Required | integer |
 
-## Returns
+### Returns
 
 A collection object with the following properties in the results
 
@@ -46,7 +46,7 @@ A collection object with the following properties in the results
 | items | List of invoice items Item Details |
 | payments | List of payments of the invoice Payment Details |
 
-## Current status
+### Current status
 
 | \# | Description |
 | --- | --- |
@@ -57,7 +57,7 @@ A collection object with the following properties in the results
 | 4 | Cancelled |
 | 5 | Refunded |
 
-## Reference type
+### Reference type
 
 | \# | Description |
 | --- | --- |
@@ -67,7 +67,7 @@ A collection object with the following properties in the results
 | 3 | Membership Renewal |
 | 4 | Venue Booking |
 
-## Address Details
+### Address Details
 
 | Property | Description |
 | --- | --- |
@@ -82,7 +82,7 @@ A collection object with the following properties in the results
 | countryName | The country name of the address \(e.g. Australia\) |
 | postalCode | The postal code of the address |
 
-## Item Details
+### Item Details
 
 | Property | Description |
 | --- | --- |
@@ -94,7 +94,7 @@ A collection object with the following properties in the results
 | amountPaid | The amount paid of the item' |
 | refType | The reference type of the item |
 
-## Payment Details
+### Payment Details
 
 | Property | Description |
 | --- | --- |
@@ -110,7 +110,7 @@ A collection object with the following properties in the results
 
 `Note about fee: If the payment is applied to multiple invoices, the fee amount is applied to the first invoice only.`
 
-## Throws
+### Throws
 
 | Code | Description |
 | --- | --- |

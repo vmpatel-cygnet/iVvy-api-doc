@@ -31,7 +31,7 @@ Add or update cost center details to the account. The cost center name and code 
 | Specific Code: 24150 | Account does not exist |
 | Specific Code: 24150 | The cost centers details are invalid |
 
-## Example Request
+### Example Request
 
 `Example: Add a cost center to an account`
 
@@ -43,7 +43,7 @@ Add or update cost center details to the account. The cost center name and code 
 }
 ```
 
-## Example Response
+### Example Response
 
 ```javascript
 {

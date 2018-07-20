@@ -24,7 +24,7 @@ This call also accepts the pagination parameters. By default, only the first 10 
 
 `[PlatformAddress]/api/1.0/marketplace?action=getVenueList`
 
-## Example Request
+### Example Request
 
 ```javascript
 {
@@ -38,7 +38,7 @@ This call also accepts the pagination parameters. By default, only the first 10 
 }
 ```
 
-## Example Response
+### Example Response
 
 `A collection of venues that match the criteria. A single venue will be represented by the following json example:`
 

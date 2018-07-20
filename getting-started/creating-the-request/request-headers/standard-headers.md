@@ -2,11 +2,19 @@
 
 ## HOST \(Required\)
 
-This determines the host that is used for the request. This value is required and should be set to one of the following:
+You will need to verify which region that you wish to integrate with to determine your host. If you are unsure, you can contact the support team for assistance.
 
-* api.ap-southeast-2.ivvy.com
-* api.us-west-2.ivvy.com
-* api.eu-west-2.ivvy.com
+For integrations on our AU Servers, the host is: 
+
+* [api.ap-southeast-2.ivvy.com](http://api.ap-southeast-2.ivvy.com/)
+
+For integrations on our US Servers, the host is: 
+
+* [api.us-west-2.ivvy.com](http://api.us-west-2.ivvy.com/) \(This is for US Servers\)
+
+For integrations on our UK Servers, the host is: 
+
+* [api.eu-west-2.ivvy.com](http://api.eu-west-2.ivvy.com/) \(This is for UK servers\)
 
 Contact [support@ivvy.com](mailto:support@ivvy.com) if you are unsure which value to use.
 

@@ -4,7 +4,7 @@
 
 Get registration details.
 
-### Api Url
+## API URL
 
 `[PlatformAddress]/api/1.0/event?action=getRegistration`
 

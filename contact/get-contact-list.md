@@ -1,14 +1,14 @@
 # Get Contact List
 
-## Description
+### Description
 
 Get the list of contact.
 
-## Api Url
+### API URL
 
 `[PlatformAddress]/api/1.0/contact?action=getContactList`
 
-## Parameters
+### Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
@@ -22,7 +22,7 @@ Get the list of contact.
 | fromModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | toModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 
-## Returns
+### Returns
 
 | Property | Description |
 | --- | --- |
@@ -37,7 +37,7 @@ Get the list of contact.
 | externalId | This will be external id of the contact |
 | modifiedDate | The modified date of the contact |
 
-## keys
+### keys
 
 | fieldId |
 | --- |

@@ -1,10 +1,10 @@
 # Get Subscription Group List
 
-## Description
+### Description
 
 Get the list of subscription group.
 
-## Api Url
+### API URL
 
 `[PlatformAddress]/api/1.0/contact?action=getSubscriptionGroupList`
 

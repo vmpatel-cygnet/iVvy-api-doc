@@ -4,7 +4,7 @@
 
 Add or update event details.
 
-## Api Url
+## API URL
 
 `[PlatformAddress]/api/1.0/event?action=getEvent`
 

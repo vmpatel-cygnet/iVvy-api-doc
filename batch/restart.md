@@ -4,7 +4,7 @@
 
 The restart action takes the asyncId as a parameter and returns the success of the call. Note a success of true does not mean the job will restart immediately.
 
-## Api Url
+## API URL
 
 `[PlatformAddress]/api/1.0/batch?action=restart`
 

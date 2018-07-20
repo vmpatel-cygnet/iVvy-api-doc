@@ -8,7 +8,7 @@ The repost action takes the asyncId as a parameter and returns the success of th
 Note a success of true does not mean the callback will be hit immediately.
 {% endhint %}
 
-## Api Url
+## API URL
 
 `[PlatformAddress]/api/1.0/batch?action=repost`
 

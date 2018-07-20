@@ -1,6 +1,6 @@
 # Progress
 
-## Api Url
+## API URL
 
 `[PlatformAddress]/api/1.0/batch?action=progress`
 

@@ -4,7 +4,7 @@
 
 Get the contact details.
 
-### Api Url
+### API URL
 
 `[PlatformAddress]/api/1.0/contact?action=getContact`
 
@@ -117,7 +117,7 @@ Get the contact details.
 | attended | If the contact has attended the event |
 | attendedDateTime | When the contact attended the event |
 
-## Invoice Details
+### Invoice Details
 
 | Property | Description |
 | --- | --- |

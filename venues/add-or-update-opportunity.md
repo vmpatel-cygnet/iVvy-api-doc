@@ -57,3 +57,50 @@ This call takes values for a opportunity, and either
 
       created opportunity.
 
+`Add opportunity`
+
+### Example Request
+
+```javascript
+{
+  "venueId": "107",
+  "name": "Lead By API",
+  "contactId": "918",
+  "typeId": "18",
+  "sourceId": "25",
+  "stageId": "69",
+  "industryId": "77",
+  "stageReasonId": "127",
+  "closedDate": "2017-05-05"
+}
+```
+
+### Example Response
+
+```javascript
+{
+  "success": true,
+  "id": 755
+}
+```
+
+`Update opportunity`
+
+### Example Request
+
+```javascript
+{
+  "id": 755,
+  "venueId": "107",
+  "name": "Updated Name"
+}
+```
+
+### Example Response
+
+```javascript
+{
+  "success": true,
+  "id": 755
+}
+```

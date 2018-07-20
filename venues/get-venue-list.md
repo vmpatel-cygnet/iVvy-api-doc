@@ -1,14 +1,16 @@
 # Get Venue List
 
-### Description
+## Description
+
+Get list of venues.
 
 The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties.
 
-### Api Url
+## Api Url
 
 `[PlatformAddress]/api/1.0/venue?action=getVenueList`
 
-### Example Response
+## Example Response
 
 ```javascript
 {
@@ -100,3 +102,4 @@ The result from this call will be a [collection](../interpreting-the-response/co
   ]
 }
 ```
+

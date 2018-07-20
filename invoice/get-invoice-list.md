@@ -1,21 +1,21 @@
 # Get Invoice List
 
-### Description
+## Description
 
 Get list of invoices.
 
-### Api Url
+## Api Url
 
 `[PlatformAddress]/api/1.0/invoice?action=getInvoiceList`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
 | perPage | The number of invoices to get in a single api call | Required | integer |
 | start | The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\) | Required | integer |
 
-### Additional [Filter ](../interpreting-the-response/filtering.md)Properties
+## Additional [Filter ](../interpreting-the-response/filtering.md)Properties
 
 | Property | Description | Type |
 | --- | --- | --- |
@@ -24,7 +24,7 @@ Get list of invoices.
 | venueId | Filter invoices that belong to a specific Venue | integer |
 | refType | Filter by a specific reference type. The[ reference type](get-invoice-list.md#reference-type) of the invoice | integer |
 
-### Reference type
+## Reference type
 
 | \# | Description |
 | --- | --- |
@@ -34,7 +34,7 @@ Get list of invoices.
 | 3 | Membership Renewal |
 | 4 | Venue Booking |
 
-### Returns
+## Returns
 
 A collection object with the following properties in the results
 
@@ -64,7 +64,7 @@ A collection object with the following properties in the results
 | toAddress | [The “to” Address of the invoice](get-invoice-list.md#address-details) |
 | bookingCode | The unique reference code of the booking if refType is 4 \(Venue Booking\) |
 
-### Current status
+## Current status
 
 | \# | Description |
 | --- | --- |
@@ -75,7 +75,7 @@ A collection object with the following properties in the results
 | 4 | Cancelled |
 | 5 | Refunded |
 
-### Address Details
+## Address Details
 
 | Property | Description |
 | --- | --- |
@@ -92,7 +92,7 @@ A collection object with the following properties in the results
 
 The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties.
 
-### Example Response
+## Example Response
 
 ```javascript
 {
@@ -178,3 +178,4 @@ The result from this call will be a [collection](../interpreting-the-response/co
   ]
 }
 ```
+

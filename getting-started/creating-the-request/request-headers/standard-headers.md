@@ -10,15 +10,13 @@ For integrations on our AU Servers, the host is:
 
 For integrations on our US Servers, the host is: 
 
-* [api.us-west-2.ivvy.com](http://api.us-west-2.ivvy.com/) \(This is for US Servers\)
+* [api.us-west-2.ivvy.com](http://api.us-west-2.ivvy.com/)
 
 For integrations on our UK Servers, the host is: 
 
-* [api.eu-west-2.ivvy.com](http://api.eu-west-2.ivvy.com/) \(This is for UK servers\)
+* [api.eu-west-2.ivvy.com](http://api.eu-west-2.ivvy.com/)
 
 Contact [support@ivvy.com](mailto:support@ivvy.com) if you are unsure which value to use.
-
-`HOST: api.ap-southeast-2.ivvy.com`
 
 ## Date \(Required unless using [IVVY-Date header](custom-headers.md#ivvy-date-optional)\)
 
